@@ -1,5 +1,7 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -8,6 +10,8 @@
 <title>Gallery | SAARATHI NGO</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -21,19 +25,47 @@ font-family:"Open Sans",sans-serif;
 background:#f8f9fa;
 }
 
+/* NAVBAR */
+
+.navbar-custom{
+background:#2b2e83;
+padding:12px 0;
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.navbar-dark .nav-link{
+color:white !important;
+font-weight:600;
+}
+
+/* TITLE */
+
 .section-title{
 color:var(--brand-blue);
-font-weight:bold;
+font-weight:700;
 }
 
-.activity-section{
-margin-bottom:60px;
-}
+/* GALLERY GRID */
 
-.carousel img{
-height:420px;
+.gallery-img{
+width:100%;
+height:250px;
 object-fit:cover;
-border-radius:12px;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.gallery-img:hover{
+transform:scale(1.05);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* MODAL IMAGE */
+
+.modal-img{
+width:100%;
+border-radius:10px;
 }
 
 </style>
@@ -42,307 +74,209 @@ border-radius:12px;
 
 <body>
 
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+<img src="images/logo.png" width="40" class="me-2 rounded">
+SAARATHI
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav ms-auto text-center">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="programs.html">Programs</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="gallery.html">Gallery</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+<li class="nav-item">
+<a class="btn btn-light fw-bold text-primary px-4 rounded-pill" href="donate.html">
+Donate
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- GALLERY SECTION -->
+
 <section class="container py-5">
 
 <h2 class="text-center section-title mb-5">
 Our Activities
 </h2>
 
-<!-- SUMMER CAMP -->
+<div class="row g-4">
 
-<div class="activity-section">
-
-<h4>Summer Camp – April 2025</h4>
-<p class="text-muted">
-70 students from different government schools participated in a 5-day summer camp with learning and creative activities.
-</p>
-
-<div id="campCarousel" class="carousel slide" data-bs-ride="carousel">
-
-<div class="carousel-inner shadow">
-
-<div class="carousel-item active">
-<img src="images/summercamp1.jpg" class="d-block w-100">
+<div class="col-md-4">
+<img src="images/summercamp1.jpg" class="gallery-img">
 </div>
 
-<div class="carousel-item">
-<img src="images/summercamp2.jpg" class="d-block w-100">
+<div class="col-md-4">
+<img src="images/summercamp2.jpg" class="gallery-img">
 </div>
 
-<div class="carousel-item">
-<img src="images/summercamp3.jpg" class="d-block w-100">
+<div class="col-md-4">
+<img src="images/summercamp3.jpg" class="gallery-img">
 </div>
 
+<div class="col-md-4">
+<img src="images/beechaganahalli1.jpg" class="gallery-img">
 </div>
 
-<button class="carousel-control-prev" type="button" data-bs-target="#campCarousel" data-bs-slide="prev">
-<span class="carousel-control-prev-icon"></span>
-</button>
-
-<button class="carousel-control-next" type="button" data-bs-target="#campCarousel" data-bs-slide="next">
-<span class="carousel-control-next-icon"></span>
-</button>
-
-</div>
+<div class="col-md-4">
+<img src="images/beechaganahalli2.jpg" class="gallery-img">
 </div>
 
-
-<!-- BEECHAGANAHALLI VISIT -->
-
-<div class="activity-section">
-
-<h4>Beechaganahalli School Visit – 14 June 2025</h4>
-<p class="text-muted">
-Visit to Government Higher Primary School and High School in Beechaganahalli, Chikkaballapura district.
-</p>
-
-<div id="beechaganahalliCarousel" class="carousel slide" data-bs-ride="carousel">
-
-<div class="carousel-inner shadow">
-
-<div class="carousel-item active">
-<img src="images/beechaganahalli1.jpg" class="d-block w-100">
+<div class="col-md-4">
+<img src="images/outreach1.jpg" class="gallery-img">
 </div>
 
-<div class="carousel-item">
-<img src="images/beechaganahalli2.jpg" class="d-block w-100">
+<div class="col-md-4">
+<img src="images/outreach2.jpg" class="gallery-img">
 </div>
 
+<div class="col-md-4">
+<img src="images/outreach3.jpg" class="gallery-img">
 </div>
 
-<button class="carousel-control-prev" type="button" data-bs-target="#beechaganahalliCarousel" data-bs-slide="prev">
-<span class="carousel-control-prev-icon"></span>
-</button>
-
-<button class="carousel-control-next" type="button" data-bs-target="#beechaganahalliCarousel" data-bs-slide="next">
-<span class="carousel-control-next-icon"></span>
-</button>
-
-</div>
+<div class="col-md-4">
+<img src="images/urban1.jpg" class="gallery-img">
 </div>
 
-
-<!-- SCHOOL OUTREACH -->
-
-<div class="activity-section">
-
-<h4>School Outreach Program – 28 June 2025</h4>
-<p class="text-muted">
-Educational activities and distribution of school bags, notebooks and stationery.
-</p>
-
-<div id="outreachCarousel" class="carousel slide" data-bs-ride="carousel">
-
-<div class="carousel-inner shadow">
-
-<div class="carousel-item active">
-<img src="images/outreach1.jpg" class="d-block w-100">
+<div class="col-md-4">
+<img src="images/urban2.jpg" class="gallery-img">
 </div>
 
-<div class="carousel-item">
-<img src="images/outreach2.jpg" class="d-block w-100">
+<div class="col-md-4">
+<img src="images/kudure1.jpg" class="gallery-img">
 </div>
 
-<div class="carousel-item">
-<img src="images/outreach3.jpg" class="d-block w-100">
+<div class="col-md-4">
+<img src="images/kudure2.jpg" class="gallery-img">
 </div>
 
-</div>
-
-<button class="carousel-control-prev" type="button" data-bs-target="#outreachCarousel" data-bs-slide="prev">
-<span class="carousel-control-prev-icon"></span>
-</button>
-
-<button class="carousel-control-next" type="button" data-bs-target="#outreachCarousel" data-bs-slide="next">
-<span class="carousel-control-next-icon"></span>
-</button>
-
-</div>
-</div>
-
-
-<!-- SCHOOL VISITS JULY 4 -->
-
-<div class="activity-section">
-
-<h4>School Visits – 4 July 2025</h4>
-<p class="text-muted">
-Visits to Government Lower Primary Schools in Illigaradoddi and Kukkuru to support students.
-</p>
-
-<div id="july4Carousel" class="carousel slide" data-bs-ride="carousel">
-
-<div class="carousel-inner shadow">
-
-<div class="carousel-item active">
-<img src="images/july4_1.jpg" class="d-block w-100">
-</div>
-
-<div class="carousel-item">
-<img src="images/july4_2.jpg" class="d-block w-100">
-</div>
-
-</div>
-
-<button class="carousel-control-prev" type="button" data-bs-target="#july4Carousel" data-bs-slide="prev">
-<span class="carousel-control-prev-icon"></span>
-</button>
-
-<button class="carousel-control-next" type="button" data-bs-target="#july4Carousel" data-bs-slide="next">
-<span class="carousel-control-next-icon"></span>
-</button>
-
-</div>
-</div>
-
-
-<!-- SCHOOL VISITS JULY 12 -->
-
-<div class="activity-section">
-
-<h4>School Visits – 12 July 2025</h4>
-<p class="text-muted">
-Visits to Sathanuru, Halasuru and Aralimaradadoddi schools with educational engagement activities.
-</p>
-
-<div id="july12Carousel" class="carousel slide" data-bs-ride="carousel">
-
-<div class="carousel-inner shadow">
-
-<div class="carousel-item active">
-<img src="images/july12_1.jpg" class="d-block w-100">
-</div>
-
-<div class="carousel-item">
-<img src="images/july12_2.jpg" class="d-block w-100">
-</div>
-
-</div>
-
-<button class="carousel-control-prev" type="button" data-bs-target="#july12Carousel" data-bs-slide="prev">
-<span class="carousel-control-prev-icon"></span>
-</button>
-
-<button class="carousel-control-next" type="button" data-bs-target="#july12Carousel" data-bs-slide="next">
-<span class="carousel-control-next-icon"></span>
-</button>
-
-</div>
-</div>
-
-
-<!-- URBAN SUPPORT -->
-
-<div class="activity-section">
-
-<h4>Urban Student Support – 20 July 2025</h4>
-<p class="text-muted">
-Distribution of school bags and books to selected students in Bangalore.
-</p>
-
-<div id="urbanCarousel" class="carousel slide" data-bs-ride="carousel">
-
-<div class="carousel-inner shadow">
-
-<div class="carousel-item active">
-<img src="images/urban1.jpg" class="d-block w-100">
-</div>
-
-<div class="carousel-item">
-<img src="images/urban2.jpg" class="d-block w-100">
-</div>
-
-</div>
-
-<button class="carousel-control-prev" type="button" data-bs-target="#urbanCarousel" data-bs-slide="prev">
-<span class="carousel-control-prev-icon"></span>
-</button>
-
-<button class="carousel-control-next" type="button" data-bs-target="#urbanCarousel" data-bs-slide="next">
-<span class="carousel-control-next-icon"></span>
-</button>
-
-</div>
-</div>
-
-
-<!-- KUDURE DEVANAHALLI -->
-
-<div class="activity-section">
-
-<h4>Kudure Devanahalli School Visit – 26 July 2025</h4>
-<p class="text-muted">
-Educational outreach and support for students in Chitradurga district.
-</p>
-
-<div id="kudureCarousel" class="carousel slide" data-bs-ride="carousel">
-
-<div class="carousel-inner shadow">
-
-<div class="carousel-item active">
-<img src="images/kudure1.jpg" class="d-block w-100">
-</div>
-
-<div class="carousel-item">
-<img src="images/kudure2.jpg" class="d-block w-100">
-</div>
-
-</div>
-
-<button class="carousel-control-prev" type="button" data-bs-target="#kudureCarousel" data-bs-slide="prev">
-<span class="carousel-control-prev-icon"></span>
-</button>
-
-<button class="carousel-control-next" type="button" data-bs-target="#kudureCarousel" data-bs-slide="next">
-<span class="carousel-control-next-icon"></span>
-</button>
-
-</div>
-</div>
-
-
-<!-- THOKASANDRA -->
-
-<div class="activity-section">
-
-<h4>Thokasandra School Visit – 20 August 2025</h4>
-<p class="text-muted">
-Support for students at Government Higher Primary School, Thokasandra, Ramanagara district.
-</p>
-
-<div id="thokasandraCarousel" class="carousel slide" data-bs-ride="carousel">
-
-<div class="carousel-inner shadow">
-
-<div class="carousel-item active">
-<img src="images/thokasandra1.jpg" class="d-block w-100">
-</div>
-
-<div class="carousel-item">
-<img src="images/thokasandra2.jpg" class="d-block w-100">
-</div>
-
-</div>
-
-<button class="carousel-control-prev" type="button" data-bs-target="#thokasandraCarousel" data-bs-slide="prev">
-<span class="carousel-control-prev-icon"></span>
-</button>
-
-<button class="carousel-control-next" type="button" data-bs-target="#thokasandraCarousel" data-bs-slide="next">
-<span class="carousel-control-next-icon"></span>
-</button>
-
-</div>
 </div>
 
 </section>
 
-<footer class="bg-dark text-white text-center p-3">
+<!-- IMAGE MODAL -->
+
+<div class="modal fade" id="imageModal" tabindex="-1">
+
+<div class="modal-dialog modal-lg modal-dialog-centered">
+
+<div class="modal-content">
+
+<div class="modal-body text-center">
+
+<img src="" id="modalImage" class="modal-img">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer style="background:#2b2e83;color:white" class="pt-5 pb-3">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-4">
+<h5>SAARATHI</h5>
+<p>Supporting education and empowering rural students across Karnataka.</p>
+</div>
+
+<div class="col-md-4">
+
+<h5>Quick Links</h5>
+
+<ul class="list-unstyled">
+<li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+<li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+<li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
+<li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+<li><a href="donate.html" class="text-white text-decoration-none">Donate</a></li>
+</ul>
+
+</div>
+
+<div class="col-md-4">
+
+<h5>Contact</h5>
+
+<p>📧 saarathitrust@gmail.com</p>
+<p>📞 +91 7411403290</p>
+<p>📍 RR Nagar, Bangalore – 560098</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="text-center small">
 © 2026 SAARATHI NGO
+</div>
+
+</div>
+
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
-</html>
+<script>
 
+/* IMAGE CLICK POPUP */
+
+const images = document.querySelectorAll(".gallery-img");
+const modalImage = document.getElementById("modalImage");
+const modal = new bootstrap.Modal(document.getElementById("imageModal"));
+
+images.forEach(img => {
+img.addEventListener("click", () => {
+modalImage.src = img.src;
+modal.show();
+});
+});
+
+</script>
+
+</body>
+
+</html>
