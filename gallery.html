@@ -1,70 +1,91 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gallery | Saarathi Trust</title>
+<title>Saarathi Trust Gallery</title>
 
-<!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
 
-body{
-font-family: Arial, sans-serif;
-background:#f5f5f5;
+/* Navbar color */
+.navbar-custom{
+background:#2b2e83;
 }
 
-/* Hero Section */
-
-.hero{
+/* Hero section */
+.hero-section{
 background:#2b2e83;
 color:white;
-padding:70px 20px;
+padding:90px 20px 70px;
 text-align:center;
 }
 
-/* Gallery */
+/* Gallery title */
+.year-title{
+text-align:center;
+margin:50px 0 30px;
+font-weight:700;
+}
 
-.gallery-section{
-padding:60px 0;
+/* Gallery cards */
+.gallery-card{
+border:none;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.gallery-card:hover{
+transform:translateY(-5px);
 }
 
 .gallery-img{
-height:450px;
+height:220px;
 object-fit:cover;
-border-radius:10px;
-}
-
-/* Footer */
-
-.footer{
-background:#111;
-color:white;
-padding:30px 0;
-text-align:center;
-margin-top:40px;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<!-- Navbar -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+
 <div class="container">
 
-<a class="navbar-brand" href="#">Saarathi Trust</a>
+<a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<img src="images/logo.png" width="40" class="me-2 rounded">
+
+SAARATHI
+
+</a>
+
+
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
 <span class="navbar-toggler-icon"></span>
+
 </button>
 
+
 <div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav ms-auto">
+
+<ul class="navbar-nav ms-auto text-center">
 
 <li class="nav-item">
 <a class="nav-link" href="index.html">Home</a>
@@ -75,139 +96,348 @@ margin-top:40px;
 </li>
 
 <li class="nav-item">
+<a class="nav-link" href="programs.html">Programs</a>
+</li>
+
+<li class="nav-item">
 <a class="nav-link active" href="gallery.html">Gallery</a>
 </li>
+
+<li class="nav-item dropdown">
+
+<a
+class="nav-link dropdown-toggle"
+href="#"
+role="button"
+data-bs-toggle="dropdown">
+
+Resources
+
+</a>
+
+<ul class="dropdown-menu">
+
+<li>
+<a class="dropdown-item" href="news.html">News & Events</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="reports.html">Financial Reports</a>
+</li>
+
+</ul>
+
+</li>
+
+
+<li class="nav-item dropdown">
+
+<a
+class="nav-link dropdown-toggle"
+href="#"
+role="button"
+data-bs-toggle="dropdown">
+
+Be a Part
+
+</a>
+
+<ul class="dropdown-menu">
+
+<li>
+<a class="dropdown-item" href="donate.html">Be a Donor</a>
+</li>
+
+<li>
+<a class="dropdown-item"
+href="https://wa.me/917411403290?text=Hello%20I%20would%20like%20to%20volunteer%20for%20Saarathi%20NGO"
+target="_blank">
+
+Be a Volunteer
+
+</a>
+</li>
+
+</ul>
+
+</li>
+
 
 <li class="nav-item">
 <a class="nav-link" href="contact.html">Contact</a>
 </li>
 
+<li class="nav-item mt-2 mt-lg-0">
+
+<a
+class="btn btn-light fw-bold text-primary px-4 rounded-pill"
+href="donate.html">
+
+Donate
+
+</a>
+
+</li>
+
 </ul>
+
 </div>
 
 </div>
+
 </nav>
 
-<!-- Hero -->
 
-<section class="hero">
-<h1>Our Gallery</h1>
-<p>Moments from our activities and community work</p>
-</section>
+<!-- HERO -->
 
+<section class="hero-section">
 
-<!-- ===== 2025 SECTION ===== -->
+<h1>Our Activities</h1>
 
-<section class="gallery-section container">
-
-<h2 class="text-center mb-4">2025</h2>
-
-<div id="gallery2025" class="carousel slide" data-bs-ride="carousel">
-
-<div class="carousel-inner">
-
-<div class="carousel-item active">
-<img src="images/gallery/photo1.jpg" class="d-block w-100 gallery-img">
-<div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
-<h5>Summer Camp</h5>
-<p>Children enjoying activities at summer camp.</p>
-</div>
-</div>
-
-<div class="carousel-item">
-<img src="images/gallery/photo2.jpg" class="d-block w-100 gallery-img">
-<div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
-<h5>Food Distribution</h5>
-<p>Volunteers distributing meals to needy families.</p>
-</div>
-</div>
-
-<div class="carousel-item">
-<img src="images/gallery/photo3.jpg" class="d-block w-100 gallery-img">
-<div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
-<h5>Education Program</h5>
-<p>Students participating in education support classes.</p>
-</div>
-</div>
-
-</div>
-
-<button class="carousel-control-prev" type="button" data-bs-target="#gallery2025" data-bs-slide="prev">
-<span class="carousel-control-prev-icon"></span>
-</button>
-
-<button class="carousel-control-next" type="button" data-bs-target="#gallery2025" data-bs-slide="next">
-<span class="carousel-control-next-icon"></span>
-</button>
-
-</div>
+<p>Supporting education and empowering rural communities</p>
 
 </section>
 
 
 
-<!-- ===== 2024 SECTION ===== -->
-
-<section class="gallery-section container">
-
-<h2 class="text-center mb-4">2024</h2>
-
-<div id="gallery2024" class="carousel slide" data-bs-ride="carousel">
-
-<div class="carousel-inner">
-
-<div class="carousel-item active">
-<img src="images/gallery/photo4.jpg" class="d-block w-100 gallery-img">
-<div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
-<h5>Health Camp</h5>
-<p>Free health checkup camp for villagers.</p>
-</div>
-</div>
-
-<div class="carousel-item">
-<img src="images/gallery/photo5.jpg" class="d-block w-100 gallery-img">
-<div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
-<h5>School Kit Distribution</h5>
-<p>Students receiving school supplies.</p>
-</div>
-</div>
-
-</div>
-
-<button class="carousel-control-prev" type="button" data-bs-target="#gallery2024" data-bs-slide="prev">
-<span class="carousel-control-prev-icon"></span>
-</button>
-
-<button class="carousel-control-next" type="button" data-bs-target="#gallery2024" data-bs-slide="next">
-<span class="carousel-control-next-icon"></span>
-</button>
-
-</div>
-
-</section>
-
-
-
-<!-- Footer -->
-
-<footer class="footer">
+<!-- GALLERY -->
 
 <div class="container">
 
-<h5>Saarathi Trust</h5>
-<p>Working towards education, health and community development.</p>
+<h2 class="year-title">Activities - 2025</h2>
 
-<p>© 2025 Saarathi Trust | All Rights Reserved</p>
+<div class="row g-4">
+
+
+<div class="col-md-4">
+
+<div class="card gallery-card">
+
+<img src="images/summercamp.jpg" class="gallery-img card-img-top">
+
+<div class="card-body">
+
+<h5>Summer Camp</h5>
+
+<p>
+70 students from government schools participated in
+a 5-day educational and recreational camp.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+
+<div class="card gallery-card">
+
+<img src="images/beechaganahalli.jpg" class="gallery-img card-img-top">
+
+<div class="card-body">
+
+<h5>School Visit</h5>
+
+<p>
+Govt Higher Primary School & High School,
+Beechaganahalli, Chikkaballapura.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="card gallery-card">
+
+<img src="images/channapatna.jpg" class="gallery-img card-img-top">
+
+<div class="card-body">
+
+<h5>School Outreach</h5>
+
+<p>
+Educational engagement activities in
+Channapatna schools.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="card gallery-card">
+
+<img src="images/illigaradoddi.jpg" class="gallery-img card-img-top">
+
+<div class="card-body">
+
+<h5>School Visit</h5>
+
+<p>
+Govt Lower Primary School,
+Illigaradoddi, Ramanagara.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="card gallery-card">
+
+<img src="images/kanakapura.jpg" class="gallery-img card-img-top">
+
+<div class="card-body">
+
+<h5>Kanakapura Schools</h5>
+
+<p>
+School visits at Sathanuru,
+Halasuru and Aralimaradadoddi.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="card gallery-card">
+
+<img src="images/bangalore.jpg" class="gallery-img card-img-top">
+
+<div class="card-body">
+
+<h5>Bangalore Distribution</h5>
+
+<p>
+School bags and books distributed
+to 50 students in Bangalore.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+<!-- FOOTER -->
+
+<footer style="background:#2b2e83;color:white" class="pt-5 pb-3">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-4">
+
+<h5>SAARATHI</h5>
+
+<p>
+Supporting education and empowering rural students
+across Karnataka.
+</p>
+
+</div>
+
+
+<div class="col-md-4">
+
+<h5>Quick Links</h5>
+
+<ul class="list-unstyled">
+
+<li>
+<a href="index.html" class="text-white text-decoration-none">Home</a>
+</li>
+
+<li>
+<a href="about.html" class="text-white text-decoration-none">About</a>
+</li>
+
+<li>
+<a href="programs.html" class="text-white text-decoration-none">Programs</a>
+</li>
+
+<li>
+<a href="gallery.html" class="text-white text-decoration-none">Gallery</a>
+</li>
+
+<li>
+<a href="donate.html" class="text-white text-decoration-none">Donate</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="col-md-4">
+
+<h5>Contact</h5>
+
+<p>📧 saarathitrust@gmail.com</p>
+<p>📞 +91 7411403290</p>
+<p>📍 RR Nagar, Bangalore – 560098</p>
+
+<h5 class="mt-3">Follow Us</h5>
+
+<a href="#" class="text-white">LinkedIn</a> |
+<a href="#" class="text-white">Facebook</a> |
+<a href="#" class="text-white">Instagram</a> |
+<a href="#" class="text-white">YouTube</a>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="text-center small">
+
+© SAARATHI NGO
+
+</div>
 
 </div>
 
 </footer>
 
 
-
-<!-- Bootstrap JS -->
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
+```
