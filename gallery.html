@@ -88,6 +88,38 @@
       .card-content h3 {
         margin-top: 0;
       }
+      /* MOBILE FIX */
+
+@media (max-width:768px){
+
+.gallery{
+grid-template-columns:1fr;
+padding:20px;
+}
+
+.title{
+font-size:28px;
+margin-top:30px;
+text-align:center;
+}
+
+.card{
+max-width:420px;
+margin:auto;
+}
+
+}
+      .card{
+background:white;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
     </style>
   </head>
   <body>
@@ -234,3 +266,4 @@
     </script>
   </body>
 </html>
+
