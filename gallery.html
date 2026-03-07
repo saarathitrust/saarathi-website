@@ -1,66 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gallery | SAARATHI NGO</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>Saarathi Trust Gallery</title>
 
 <style>
 
-:root{
---brand-blue:#2b2e83;
---brand-green:#2f6b2f;
-}
-
 body{
-font-family:"Open Sans",sans-serif;
-background:#f4f6fb;
+font-family: Arial, sans-serif;
 margin:0;
+background:#f5f5f5;
 }
 
 /* NAVBAR */
 
-.navbar-custom{
-background:#2b2e83;
-padding:12px 0;
-box-shadow:0 5px 20px rgba(0,0,0,0.15);
+.navbar{
+background:#2c2f83;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 60px;
 }
 
-.navbar-dark .nav-link{
-color:white !important;
-font-weight:600;
+.logo{
+font-weight:bold;
+font-size:20px;
 }
 
-/* PAGE TITLE */
+.nav-links a{
+color:white;
+text-decoration:none;
+margin-left:22px;
+font-weight:500;
+}
 
-.page-title{
+/* TITLE */
+
+.title{
 text-align:center;
-margin:50px 0;
-color:var(--brand-blue);
-font-weight:700;
+font-size:36px;
+margin-top:40px;
+font-weight:bold;
 }
 
-/* GALLERY GRID */
+/* GRID */
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:30px;
-padding:0 80px 60px;
+padding:50px 80px;
 }
 
 /* CARD */
 
 .card{
-border:none;
-border-radius:12px;
+background:white;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
 overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* SLIDER */
@@ -89,8 +91,8 @@ transform:translateY(-50%);
 background:rgba(0,0,0,0.5);
 color:white;
 border:none;
-width:35px;
-height:35px;
+width:36px;
+height:36px;
 border-radius:50%;
 cursor:pointer;
 font-size:18px;
@@ -99,269 +101,229 @@ font-size:18px;
 .prev{ left:10px; }
 .next{ right:10px; }
 
-/* CARD TEXT */
+/* TEXT */
 
-.card-body{
+.card-content{
 padding:20px;
+}
+
+.card-content h3{
+margin-top:0;
 }
 
 /* FOOTER */
 
-footer{
-background:#2b2e83;
+.footer{
+background:#2c2f83;
 color:white;
+padding:40px 80px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:40px;
+}
+
+.footer a{
+color:white;
+text-decoration:none;
+display:block;
+margin:6px 0;
 }
 
 </style>
 
 </head>
 
-
 <body>
-
 
 <!-- NAVBAR -->
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+<div class="navbar">
 
-<div class="container">
+<div class="logo">SAARATHI TRUST</div>
 
-<a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-<img src="images/logo.png" width="40" class="me-2 rounded">
-SAARATHI
-</a>
-
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="navbarNav">
-
-<ul class="navbar-nav ms-auto text-center">
-
-<li class="nav-item">
-<a class="nav-link" href="index.html">Home</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="about.html">About</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="programs.html">Programs</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link active" href="gallery.html">Gallery</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="contact.html">Contact</a>
-</li>
-
-<li class="nav-item mt-2 mt-lg-0">
-<a class="btn btn-light fw-bold text-primary px-4 rounded-pill" href="donate.html">
-Donate
-</a>
-</li>
-
-</ul>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="programs.html">Programs</a>
+<a href="gallery.html">Gallery</a>
+<a href="beapart.html">Be a Part</a>
+<a href="resources.html">Resources</a>
+<a href="donate.html">Donate</a>
+</div>
 
 </div>
-</div>
-</nav>
 
+<!-- TITLE -->
 
-<!-- PAGE TITLE -->
-
-<h2 class="page-title">Activities - 2025</h2>
-
+<div class="title">Activities - 2025</div>
 
 <!-- GALLERY -->
 
 <div class="gallery">
 
-
-<!-- SUMMER CAMP -->
+<!-- Summer Camp -->
 
 <div class="card">
 
 <div class="slider">
-
 <img src="images/camp1.jpg" class="slide active">
 <img src="images/camp2.jpg" class="slide">
 <img src="images/camp3.jpg" class="slide">
+<img src="images/camp4.jpg" class="slide">
+<img src="images/camp5.jpg" class="slide">
 
 <button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
 <button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-
 </div>
 
-<div class="card-body">
-
-<h5>Summer Camp</h5>
+<div class="card-content">
+<h3>Summer Camp</h3>
 <p>70 students participated</p>
-
 </div>
 
 </div>
 
-
-<!-- BEECHAGANAHALLI -->
+<!-- School Visit -->
 
 <div class="card">
 
 <div class="slider">
-
 <img src="images/beech1.jpg" class="slide active">
 <img src="images/beech2.jpg" class="slide">
 <img src="images/beech3.jpg" class="slide">
+<img src="images/beech4.jpg" class="slide">
+<img src="images/beech5.jpg" class="slide">
 
 <button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
 <button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-
 </div>
 
-<div class="card-body">
-
-<h5>School Visit</h5>
+<div class="card-content">
+<h3>School Visit</h3>
 <p>Beechaganahalli – Chikkaballapura</p>
-
 </div>
 
 </div>
 
-
-<!-- CHANNAPATNA -->
+<!-- Channapatna Visits -->
 
 <div class="card">
 
 <div class="slider">
-
 <img src="images/channa1.jpg" class="slide active">
 <img src="images/channa2.jpg" class="slide">
 <img src="images/channa3.jpg" class="slide">
+<img src="images/channa4.jpg" class="slide">
+<img src="images/channa5.jpg" class="slide">
 
 <button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
 <button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-
 </div>
 
-<div class="card-body">
-
-<h5>School Visits – Channapatna</h5>
+<div class="card-content">
+<h3>School Visits – Channapatna</h3>
 <p>Veeregowdanadoddi, Gollaradoddi, Thoobinakere</p>
-
 </div>
 
 </div>
 
-
-<!-- URBAN DISTRIBUTION -->
+<!-- Illigaradoddi -->
 
 <div class="card">
 
 <div class="slider">
+<img src="images/illi1.jpg" class="slide active">
+<img src="images/illi2.jpg" class="slide">
+<img src="images/illi3.jpg" class="slide">
+<img src="images/illi4.jpg" class="slide">
+<img src="images/illi5.jpg" class="slide">
 
+<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
+<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
+</div>
+
+<div class="card-content">
+<h3>School Visit</h3>
+<p>Illigaradoddi – Ramanagara</p>
+</div>
+
+</div>
+
+<!-- Urban Distribution -->
+
+<div class="card">
+
+<div class="slider">
 <img src="images/bangalore1.jpg" class="slide active">
 <img src="images/bangalore2.jpg" class="slide">
 <img src="images/bangalore3.jpg" class="slide">
+<img src="images/bangalore4.jpg" class="slide">
+<img src="images/bangalore5.jpg" class="slide">
 
 <button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
 <button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-
 </div>
 
-<div class="card-body">
-
-<h5>Urban Distribution</h5>
+<div class="card-content">
+<h3>Urban Distribution</h3>
 <p>Bangalore – 50 students</p>
-
 </div>
 
 </div>
 
-
-<!-- PARENTS MEETING -->
+<!-- Parents Meeting -->
 
 <div class="card">
 
 <div class="slider">
-
 <img src="images/parent1.jpg" class="slide active">
 <img src="images/parent2.jpg" class="slide">
 <img src="images/parent3.jpg" class="slide">
+<img src="images/parent4.jpg" class="slide">
+<img src="images/parent5.jpg" class="slide">
 
 <button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
 <button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-
 </div>
 
-<div class="card-body">
-
-<h5>Parents Meeting</h5>
+<div class="card-content">
+<h3>Parents Meeting</h3>
 <p>Aralimaradadoddi</p>
-
 </div>
 
 </div>
-
 
 </div>
 
 
 <!-- FOOTER -->
 
-<footer class="pt-5 pb-3">
+<div class="footer">
 
-<div class="container">
-
-<div class="row">
-
-<div class="col-md-4">
-<h5>SAARATHI</h5>
+<div>
+<h3>SAARATHI</h3>
 <p>Supporting education and empowering rural students across Karnataka.</p>
 </div>
 
-<div class="col-md-4">
-<h5>Quick Links</h5>
-
-<ul class="list-unstyled">
-
-<li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-<li><a href="about.html" class="text-white text-decoration-none">About</a></li>
-<li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
-<li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
-<li><a href="donate.html" class="text-white text-decoration-none">Donate</a></li>
-
-</ul>
-
+<div>
+<h3>Quick Links</h3>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="programs.html">Programs</a>
+<a href="gallery.html">Gallery</a>
+<a href="beapart.html">Be a Part</a>
+<a href="resources.html">Resources</a>
 </div>
 
-<div class="col-md-4">
-
-<h5>Contact</h5>
-
+<div>
+<h3>Contact</h3>
 <p>📧 saarathitrust@gmail.com</p>
 <p>📞 +91 7411403290</p>
 <p>📍 RR Nagar, Bangalore – 560098</p>
-
 </div>
 
 </div>
 
-<hr>
-
-<div class="text-center small">
-© SAARATHI NGO
-</div>
-
-</div>
-
-</footer>
-
-
-<!-- SLIDER SCRIPT -->
 
 <script>
 
@@ -375,14 +337,14 @@ let index = 0;
 
 slides.forEach((slide,i)=>{
 if(slide.classList.contains("active")){
-index=i;
+index = i;
 slide.classList.remove("active");
 }
 });
 
 index = index + direction;
 
-if(index < 0) index = slides.length-1;
+if(index < 0) index = slides.length - 1;
 if(index >= slides.length) index = 0;
 
 slides[index].classList.add("active");
@@ -390,8 +352,6 @@ slides[index].classList.add("active");
 }
 
 </script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
