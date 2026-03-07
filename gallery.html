@@ -1,5 +1,7 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -11,39 +13,32 @@
 
 <style>
 
-body{
-font-family: Arial, sans-serif;
-background:#f5f5f5;
+/* NAVBAR COLOR */
+.navbar-custom{
+background:#2b2e83;
 }
 
-.navbar{
-background:#2c7a4b;
-}
-
-.navbar-brand, .nav-link{
-color:white !important;
-font-weight:500;
-}
-
-.hero{
-background:#2c7a4b;
+/* HERO SECTION */
+.hero-section{
+background:#2b2e83;
 color:white;
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
 }
 
+/* YEAR TITLE */
 .year-title{
 text-align:center;
 margin:50px 0 30px;
 font-weight:700;
-color:#2c3e50;
 }
 
+/* GALLERY CARDS */
 .gallery-card{
 border:none;
 border-radius:12px;
 overflow:hidden;
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
@@ -56,74 +51,114 @@ height:220px;
 object-fit:cover;
 }
 
-footer{
-background:#222;
-color:white;
-padding:30px;
-text-align:center;
-margin-top:60px;
-}
-
 </style>
 
 </head>
 
+
 <body>
+
 
 <!-- NAVBAR -->
 
-<nav class="navbar navbar-expand-lg">
-
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
 <div class="container">
 
-<a class="navbar-brand" href="#">Saarathi Trust</a>
+<a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+<img src="images/logo.png" width="40" class="me-2 rounded">
+SAARATHI
+</a>
 
-<button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 <span class="navbar-toggler-icon"></span>
 </button>
 
-<div class="collapse navbar-collapse" id="menu">
+<div class="collapse navbar-collapse" id="navbarNav">
 
-<ul class="navbar-nav ms-auto">
+<ul class="navbar-nav ms-auto text-center">
 
 <li class="nav-item">
-<a class="nav-link" href="#">Home</a>
+<a class="nav-link" href="index.html">Home</a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="#">About</a>
+<a class="nav-link" href="about.html">About</a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="#">Gallery</a>
+<a class="nav-link" href="programs.html">Programs</a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="#">Donate</a>
+<a class="nav-link active" href="gallery.html">Gallery</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+Resources
+</a>
+
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="news.html">News & Events</a></li>
+<li><a class="dropdown-item" href="reports.html">Financial Reports</a></li>
+</ul>
+
+</li>
+
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+Be a Part
+</a>
+
+<ul class="dropdown-menu">
+
+<li>
+<a class="dropdown-item" href="donate.html">Be a Donor</a>
+</li>
+
+<li>
+<a class="dropdown-item"
+href="https://wa.me/917411403290?text=Hello%20I%20would%20like%20to%20volunteer%20for%20Saarathi%20NGO"
+target="_blank">
+Be a Volunteer
+</a>
+</li>
+
+</ul>
+
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="#">Contact</a>
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+<li class="nav-item mt-2 mt-lg-0">
+
+<a class="btn btn-light fw-bold text-primary px-4 rounded-pill"
+href="donate.html">
+Donate
+</a>
+
 </li>
 
 </ul>
 
 </div>
-
 </div>
-
 </nav>
 
 
 <!-- HERO -->
 
-<section class="hero">
+<section class="hero-section">
 
 <h1>Our Activities</h1>
 
 <p>Supporting education and empowering rural communities</p>
 
 </section>
+
 
 
 <div class="container">
@@ -144,12 +179,10 @@ margin-top:60px;
 
 <h5>Summer Camp</h5>
 
-<p>Place: Government Schools, Karnataka</p>
+<p>Karnataka – 70 students participated in educational and recreational camp.</p>
 
 </div>
-
 </div>
-
 </div>
 
 
@@ -163,12 +196,10 @@ margin-top:60px;
 
 <h5>School Visit</h5>
 
-<p>Place: Beechaganahalli, Chikkaballapura</p>
+<p>Beechaganahalli, Chikkaballapura – School bags and stationery distributed.</p>
 
 </div>
-
 </div>
-
 </div>
 
 
@@ -182,40 +213,10 @@ margin-top:60px;
 
 <h5>School Outreach</h5>
 
-<p>Place: Channapatna, Ramanagara</p>
+<p>Channapatna, Ramanagara – Educational activities and supplies distribution.</p>
 
 </div>
-
 </div>
-
-</div>
-
-</div>
-
-
-
-<!-- ===== 2026 ===== -->
-
-<h2 class="year-title">Activities - 2026</h2>
-
-<div class="row g-4">
-
-<div class="col-md-4">
-
-<div class="card gallery-card">
-
-<img src="images/event2026-1.jpg" class="gallery-img card-img-top">
-
-<div class="card-body">
-
-<h5>Educational Support</h5>
-
-<p>Place: Kanakapura</p>
-
-</div>
-
-</div>
-
 </div>
 
 
@@ -223,18 +224,50 @@ margin-top:60px;
 
 <div class="card gallery-card">
 
-<img src="images/event2026-2.jpg" class="gallery-img card-img-top">
+<img src="images/illigaradoddi.jpg" class="gallery-img card-img-top">
 
 <div class="card-body">
 
-<h5>School Supplies Distribution</h5>
+<h5>School Visit</h5>
 
-<p>Place: Ramanagara</p>
-
-</div>
+<p>Illigaradoddi, Ramanagara – Books and stationery distributed to students.</p>
 
 </div>
+</div>
+</div>
 
+
+<div class="col-md-4">
+
+<div class="card gallery-card">
+
+<img src="images/kanakapura.jpg" class="gallery-img card-img-top">
+
+<div class="card-body">
+
+<h5>Kanakapura Schools</h5>
+
+<p>Sathanuru, Halasuru & Aralimaradadoddi – Supporting rural education.</p>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4">
+
+<div class="card gallery-card">
+
+<img src="images/bangalore.jpg" class="gallery-img card-img-top">
+
+<div class="card-body">
+
+<h5>Urban Distribution</h5>
+
+<p>Bangalore – School supplies distributed to 50 students.</p>
+
+</div>
+</div>
 </div>
 
 </div>
@@ -245,20 +278,74 @@ margin-top:60px;
 
 <!-- FOOTER -->
 
-<footer>
+<footer style="background:#2b2e83;color:white" class="pt-5 pb-3">
 
-<h5>Saarathi Trust</h5>
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-4">
+
+<h5>SAARATHI</h5>
 
 <p>
-#164, 2nd Floor, 1st Main, BEML 4th Stage <br>
-RR Nagar, Bangalore - 560098
+Supporting education and empowering rural students across Karnataka.
 </p>
 
-<p>Email: saarathutrust@gmail.com</p>
+</div>
 
-<p>Phone: +91 7411403290</p>
 
-<p>© 2026 Saarathi Trust. All Rights Reserved.</p>
+<div class="col-md-4">
+
+<h5>Quick Links</h5>
+
+<ul class="list-unstyled">
+
+<li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+
+<li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+
+<li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
+
+<li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+
+<li><a href="donate.html" class="text-white text-decoration-none">Donate</a></li>
+
+</ul>
+
+</div>
+
+
+<div class="col-md-4">
+
+<h5>Contact</h5>
+
+<p>📧 saarathitrust@gmail.com</p>
+
+<p>📞 +91 7411403290</p>
+
+<p>📍 RR Nagar, Bangalore – 560098</p>
+
+<h5 class="mt-3">Follow Us</h5>
+
+<a href="#" class="text-white">LinkedIn</a> |
+<a href="#" class="text-white">Facebook</a> |
+<a href="#" class="text-white">Instagram</a> |
+<a href="#" class="text-white">YouTube</a>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="text-center small">
+
+© SAARATHI NGO
+
+</div>
+
+</div>
 
 </footer>
 
@@ -266,5 +353,5 @@ RR Nagar, Bangalore - 560098
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
+```
