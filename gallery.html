@@ -1,357 +1,236 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Saarathi Trust Gallery</title>
-
-<style>
-
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f5f5f5;
-}
-
-/* NAVBAR */
-
-.navbar{
-background:#2c2f83;
-color:white;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 60px;
-}
-
-.logo{
-font-weight:bold;
-font-size:20px;
-}
-
-.nav-links a{
-color:white;
-text-decoration:none;
-margin-left:22px;
-font-weight:500;
-}
-
-/* TITLE */
-
-.title{
-text-align:center;
-font-size:36px;
-margin-top:40px;
-font-weight:bold;
-}
-
-/* GRID */
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
-padding:50px 80px;
-}
-
-/* CARD */
-
-.card{
-background:white;
-border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
-overflow:hidden;
-}
-
-/* SLIDER */
-
-.slider{
-position:relative;
-height:220px;
-overflow:hidden;
-}
-
-.slide{
-width:100%;
-height:220px;
-object-fit:cover;
-display:none;
-}
-
-.slide.active{
-display:block;
-}
-
-.arrow{
-position:absolute;
-top:50%;
-transform:translateY(-50%);
-background:rgba(0,0,0,0.5);
-color:white;
-border:none;
-width:36px;
-height:36px;
-border-radius:50%;
-cursor:pointer;
-font-size:18px;
-}
-
-.prev{ left:10px; }
-.next{ right:10px; }
-
-/* TEXT */
-
-.card-content{
-padding:20px;
-}
-
-.card-content h3{
-margin-top:0;
-}
-
-/* FOOTER */
-
-.footer{
-background:#2c2f83;
-color:white;
-padding:40px 80px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:40px;
-}
-
-.footer a{
-color:white;
-text-decoration:none;
-display:block;
-margin:6px 0;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<!-- NAVBAR -->
-
-<div class="navbar">
-
-<div class="logo">SAARATHI TRUST</div>
-
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="programs.html">Programs</a>
-<a href="gallery.html">Gallery</a>
-<a href="beapart.html">Be a Part</a>
-<a href="resources.html">Resources</a>
-<a href="donate.html">Donate</a>
-</div>
-
-</div>
-
-<!-- TITLE -->
-
-<div class="title">Activities - 2025</div>
-
-<!-- GALLERY -->
-
-<div class="gallery">
-
-<!-- Summer Camp -->
-
-<div class="card">
-
-<div class="slider">
-<img src="images/camp1.jpg" class="slide active">
-<img src="images/camp2.jpg" class="slide">
-<img src="images/camp3.jpg" class="slide">
-<img src="images/camp4.jpg" class="slide">
-<img src="images/camp5.jpg" class="slide">
-
-<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-</div>
-
-<div class="card-content">
-<h3>Summer Camp</h3>
-<p>70 students participated</p>
-</div>
-
-</div>
-
-<!-- School Visit -->
-
-<div class="card">
-
-<div class="slider">
-<img src="images/beech1.jpg" class="slide active">
-<img src="images/beech2.jpg" class="slide">
-<img src="images/beech3.jpg" class="slide">
-<img src="images/beech4.jpg" class="slide">
-<img src="images/beech5.jpg" class="slide">
-
-<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-</div>
-
-<div class="card-content">
-<h3>School Visit</h3>
-<p>Beechaganahalli – Chikkaballapura</p>
-</div>
-
-</div>
-
-<!-- Channapatna Visits -->
-
-<div class="card">
-
-<div class="slider">
-<img src="images/channa1.jpg" class="slide active">
-<img src="images/channa2.jpg" class="slide">
-<img src="images/channa3.jpg" class="slide">
-<img src="images/channa4.jpg" class="slide">
-<img src="images/channa5.jpg" class="slide">
-
-<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-</div>
-
-<div class="card-content">
-<h3>School Visits – Channapatna</h3>
-<p>Veeregowdanadoddi, Gollaradoddi, Thoobinakere</p>
-</div>
-
-</div>
-
-<!-- Illigaradoddi -->
-
-<div class="card">
-
-<div class="slider">
-<img src="images/illi1.jpg" class="slide active">
-<img src="images/illi2.jpg" class="slide">
-<img src="images/illi3.jpg" class="slide">
-<img src="images/illi4.jpg" class="slide">
-<img src="images/illi5.jpg" class="slide">
-
-<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-</div>
-
-<div class="card-content">
-<h3>School Visit</h3>
-<p>Illigaradoddi – Ramanagara</p>
-</div>
-
-</div>
-
-<!-- Urban Distribution -->
-
-<div class="card">
-
-<div class="slider">
-<img src="images/bangalore1.jpg" class="slide active">
-<img src="images/bangalore2.jpg" class="slide">
-<img src="images/bangalore3.jpg" class="slide">
-<img src="images/bangalore4.jpg" class="slide">
-<img src="images/bangalore5.jpg" class="slide">
-
-<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-</div>
-
-<div class="card-content">
-<h3>Urban Distribution</h3>
-<p>Bangalore – 50 students</p>
-</div>
-
-</div>
-
-<!-- Parents Meeting -->
-
-<div class="card">
-
-<div class="slider">
-<img src="images/parent1.jpg" class="slide active">
-<img src="images/parent2.jpg" class="slide">
-<img src="images/parent3.jpg" class="slide">
-<img src="images/parent4.jpg" class="slide">
-<img src="images/parent5.jpg" class="slide">
-
-<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-</div>
-
-<div class="card-content">
-<h3>Parents Meeting</h3>
-<p>Aralimaradadoddi</p>
-</div>
-
-</div>
-
-</div>
-
-
-<!-- FOOTER -->
-
-<div class="footer">
-
-<div>
-<h3>SAARATHI</h3>
-<p>Supporting education and empowering rural students across Karnataka.</p>
-</div>
-
-<div>
-<h3>Quick Links</h3>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="programs.html">Programs</a>
-<a href="gallery.html">Gallery</a>
-<a href="beapart.html">Be a Part</a>
-<a href="resources.html">Resources</a>
-</div>
-
-<div>
-<h3>Contact</h3>
-<p>📧 saarathitrust@gmail.com</p>
-<p>📞 +91 7411403290</p>
-<p>📍 RR Nagar, Bangalore – 560098</p>
-</div>
-
-</div>
-
-
-<script>
-
-function changeSlide(button, direction){
-
-let slider = button.parentElement;
-
-let slides = slider.querySelectorAll(".slide");
-
-let index = 0;
-
-slides.forEach((slide,i)=>{
-if(slide.classList.contains("active")){
-index = i;
-slide.classList.remove("active");
-}
-});
-
-index = index + direction;
-
-if(index < 0) index = slides.length - 1;
-if(index >= slides.length) index = 0;
-
-slides[index].classList.add("active");
-
-}
-
-</script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saarathi Trust Gallery</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --brand-blue: #2b2e83;
+        --brand-green: #2f6b2f;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f5f5f5;
+      } /* NAVBAR STYLE */
+      .navbar-custom {
+        background: #2b2e83;
+        padding: 12px 0;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+      }
+      .navbar-dark .nav-link {
+        color: white !important;
+        font-weight: 600;
+      } /* TITLE */
+      .title {
+        text-align: center;
+        font-size: 36px;
+        margin-top: 40px;
+        font-weight: bold;
+      } /* GRID */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+        padding: 50px 80px;
+      } /* CARD */
+      .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      } /* SLIDER */
+      .slider {
+        position: relative;
+        height: 220px;
+        overflow: hidden;
+      }
+      .slide {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: none;
+      }
+      .slide.active {
+        display: block;
+      }
+      .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+      }
+      .prev {
+        left: 10px;
+      }
+      .next {
+        right: 10px;
+      } /* TEXT */
+      .card-content {
+        padding: 20px;
+      }
+      .card-content h3 {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+    <!-- TITLE -->
+    <div class="title">Activities - 2025</div>
+    <!-- GALLERY -->
+    <div class="gallery">
+      <!-- Summer Camp -->
+      <div class="card">
+        <div class="slider">
+          <img src="images/camp1.jpg" class="slide active" />
+          <img src="images/camp2.jpg" class="slide" />
+          <img src="images/camp3.jpg" class="slide" />
+          <img src="images/camp4.jpg" class="slide" />
+          <img src="images/camp5.jpg" class="slide" />
+          <button class="arrow prev" onclick="changeSlide(this, -1)">❮</button>
+          <button class="arrow next" onclick="changeSlide(this, 1)">❯</button>
+        </div>
+        <div class="card-content">
+          <h3>Summer Camp</h3>
+          <p>70 students participated</p>
+        </div>
+      </div>
+      <!-- School Visit -->
+      <div class="card">
+        <div class="slider">
+          <img src="images/beech1.jpg" class="slide active" />
+          <img src="images/beech2.jpg" class="slide" />
+          <img src="images/beech3.jpg" class="slide" />
+          <img src="images/beech4.jpg" class="slide" />
+          <img src="images/beech5.jpg" class="slide" />
+          <button class="arrow prev" onclick="changeSlide(this, -1)">❮</button>
+          <button class="arrow next" onclick="changeSlide(this, 1)">❯</button>
+        </div>
+        <div class="card-content">
+          <h3>School Visit</h3>
+          <p>Beechaganahalli – Chikkaballapura</p>
+        </div>
+      </div>
+      <!-- Channapatna Visits -->
+      <div class="card">
+        <div class="slider">
+          <img src="images/channa1.jpg" class="slide active" />
+          <img src="images/channa2.jpg" class="slide" />
+          <img src="images/channa3.jpg" class="slide" />
+          <img src="images/channa4.jpg" class="slide" />
+          <img src="images/channa5.jpg" class="slide" />
+          <button class="arrow prev" onclick="changeSlide(this, -1)">❮</button>
+          <button class="arrow next" onclick="changeSlide(this, 1)">❯</button>
+        </div>
+        <div class="card-content">
+          <h3>School Visits – Channapatna</h3>
+          <p>Veeregowdanadoddi, Gollaradoddi, Thoobinakere</p>
+        </div>
+      </div>
+      <!-- Illigaradoddi -->
+      <div class="card">
+        <div class="slider">
+          <img src="images/illi1.jpg" class="slide active" />
+          <img src="images/illi2.jpg" class="slide" />
+          <img src="images/illi3.jpg" class="slide" />
+          <img src="images/illi4.jpg" class="slide" />
+          <img src="images/illi5.jpg" class="slide" />
+          <button class="arrow prev" onclick="changeSlide(this, -1)">❮</button>
+          <button class="arrow next" onclick="changeSlide(this, 1)">❯</button>
+        </div>
+        <div class="card-content">
+          <h3>School Visit</h3>
+          <p>Illigaradoddi – Ramanagara</p>
+        </div>
+      </div>
+      <!-- Urban Distribution -->
+      <div class="card">
+        <div class="slider">
+          <img src="images/bangalore1.jpg" class="slide active" />
+          <img src="images/bangalore2.jpg" class="slide" />
+          <img src="images/bangalore3.jpg" class="slide" />
+          <img src="images/bangalore4.jpg" class="slide" />
+          <img src="images/bangalore5.jpg" class="slide" />
+          <button class="arrow prev" onclick="changeSlide(this, -1)">❮</button>
+          <button class="arrow next" onclick="changeSlide(this, 1)">❯</button>
+        </div>
+        <div class="card-content">
+          <h3>Urban Distribution</h3>
+          <p>Bangalore – 50 students</p>
+        </div>
+      </div>
+      <!-- Parents Meeting -->
+      <div class="card">
+        <div class="slider">
+          <img src="images/parent1.jpg" class="slide active" />
+          <img src="images/parent2.jpg" class="slide" />
+          <img src="images/parent3.jpg" class="slide" />
+          <img src="images/parent4.jpg" class="slide" />
+          <img src="images/parent5.jpg" class="slide" />
+          <button class="arrow prev" onclick="changeSlide(this, -1)">❮</button>
+          <button class="arrow next" onclick="changeSlide(this, 1)">❯</button>
+        </div>
+        <div class="card-content">
+          <h3>Parents Meeting</h3>
+          <p>Aralimaradadoddi</p>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      /* Image slider */ function changeSlide(button, direction) {
+        let slider = button.parentElement;
+        let slides = slider.querySelectorAll(".slide");
+        let index = 0;
+        slides.forEach((slide, i) => {
+          if (slide.classList.contains("active")) {
+            index = i;
+            slide.classList.remove("active");
+          }
+        });
+        index = index + direction;
+        if (index < 0) index = slides.length - 1;
+        if (index >= slides.length) index = 0;
+        slides[index].classList.add("active");
+      }
+      /* Load Navbar */ fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+          let currentPage = window.location.pathname.split("/").pop();
+          let links = document.querySelectorAll(".nav-link");
+          links.forEach((link) => {
+            let linkPage = link.getAttribute("href");
+            if (linkPage === currentPage) {
+              link.classList.add("active");
+            }
+          });
+        });
+      /* Load Footer */ fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
 </html>
