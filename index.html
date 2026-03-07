@@ -1,404 +1,273 @@
-<!doctype html>
+html <!doctype html>
 <html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SAARATHI NGO | Supporting Rural Education in Karnataka</title>
-
-<meta name="description" content="SAARATHI NGO supports rural students by providing education resources, school supplies and mentorship across Karnataka.">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-<style>
-
-:root{
---brand-blue:#2b2e83;
---brand-green:#2f6b2f;
-}
-
-body{
-font-family:"Open Sans",sans-serif;
-margin:0;
-overflow-x:hidden;
-}
-
-/* NAVBAR */
-
-.navbar-custom{
-background:#2b2e83;
-padding:12px 0;
-box-shadow:0 5px 20px rgba(0,0,0,0.15);
-}
-
-.navbar-dark .nav-link{
-color:white !important;
-font-weight:600;
-}
-
-/* HERO */
-
-.hero-section{
-height:90vh;
-background:
-linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
-url("images/hero-bg.png");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-}
-
-.hero-title{
-font-family:"Montserrat",sans-serif;
-font-size:48px;
-font-weight:700;
-}
-
-.hero-sub{
-font-size:18px;
-max-width:650px;
-margin:auto;
-}
-
-.button-group{
-margin-top:25px;
-display:flex;
-gap:20px;
-justify-content:center;
-}
-
-.btn-saarathi{
-padding:12px 28px;
-border-radius:40px;
-font-weight:700;
-text-decoration:none;
-}
-
-.btn-green{
-background:#2f6b2f;
-color:white;
-}
-
-.btn-outline{
-background:white;
-color:#2b2e83;
-border:2px solid #2b2e83;
-}
-
-/* DONATION OPTIONS */
-
-.donation-card{
-border-radius:15px;
-padding:25px;
-background:white;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-text-align:center;
-transition:0.3s;
-}
-
-.donation-card:hover{
-transform:translateY(-5px);
-}
-
-.donation-card h4{
-color:var(--brand-green);
-}
-
-/* FLOATING BUTTONS */
-
-.floating-donate{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#2f6b2f;
-color:white;
-padding:12px 22px;
-border-radius:50px;
-font-weight:bold;
-text-decoration:none;
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
-z-index:9999;
-}
-
-.whatsapp-button{
-position:fixed;
-bottom:90px;
-right:25px;
-background:#25D366;
-color:white;
-padding:12px 18px;
-border-radius:50px;
-font-weight:bold;
-text-decoration:none;
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
-z-index:9999;
-}
-
-@media(max-width:768px){
-
-.hero-title{
-font-size:32px;
-}
-
-.button-group{
-flex-direction:column;
-align-items:center;
-}
-
-}
-
-</style>
-
-</head>
-
-
-<body>
-
-
-<!-- NAVBAR -->
-
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-
-<div class="container">
-
-<a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-<img src="images/logo.png" width="40" class="me-2 rounded">
-SAARATHI
-</a>
-
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="navbarNav">
-
-<ul class="navbar-nav ms-auto text-center">
-
-<li class="nav-item">
-<a class="nav-link active" href="index.html">Home</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="about.html">About</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="programs.html">Programs</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="gallery.html">Gallery</a>
-</li>
-
-<!-- RESOURCES -->
-
-<li class="nav-item dropdown">
-
-<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-Resources
-</a>
-
-<ul class="dropdown-menu">
-<li><a class="dropdown-item" href="news.html">News & Events</a></li>
-<li><a class="dropdown-item" href="reports.html">Financial Reports</a></li>
-</ul>
-
-</li>
-
-<!-- BE A PART -->
-
-<li class="nav-item dropdown">
-
-<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-Be a Part
-</a>
-
-<ul class="dropdown-menu">
-
-<li>
-<a class="dropdown-item" href="donate.html">
-Be a Donor
-</a>
-</li>
-
-<li>
-<a class="dropdown-item"
-href="https://wa.me/917411403290?text=Hello%20I%20would%20like%20to%20volunteer%20for%20Saarathi%20NGO"
-target="_blank">
-Be a Volunteer
-</a>
-</li>
-
-</ul>
-
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="contact.html">Contact</a>
-</li>
-
-<li class="nav-item mt-2 mt-lg-0">
-<a class="btn btn-light fw-bold text-primary px-4 rounded-pill" href="donate.html">
-Donate
-</a>
-</li>
-
-</ul>
-
-</div>
-</div>
-</nav>
-
-
-<!-- HERO -->
-
-<section class="hero-section">
-
-<div>
-
-<h1 class="hero-title">
-Education is the Strongest Foundation for Change
-</h1>
-
-<p class="hero-sub mt-3">
-SAARATHI supports rural students across Karnataka by providing education resources, mentorship and opportunities.
-</p>
-
-<div class="button-group">
-
-<a href="donate.html" class="btn-saarathi btn-green">
-Support Us
-</a>
-
-<a href="#intro" class="btn-saarathi btn-outline">
-Learn More
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- DONATION OPTIONS -->
-
-<section class="py-5 bg-light">
-
-<div class="container">
-
-<h2 class="text-center fw-bold mb-5" style="color:#2b2e83">
-Support a Cause
-</h2>
-
-<div class="row g-4 text-center">
-
-<div class="col-md-4">
-<div class="donation-card">
-<h4>₹5000</h4>
-<p>Supports 10 Students</p>
-<a href="donate.html" class="btn btn-success rounded-pill">Donate</a>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="donation-card">
-<h4>₹10000</h4>
-<p>Supports 20 Students</p>
-<a href="donate.html" class="btn btn-success rounded-pill">Donate</a>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="donation-card">
-<h4>₹25000</h4>
-<p>Supports One School</p>
-<a href="donate.html" class="btn btn-success rounded-pill">Donate</a>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer style="background:#2b2e83;color:white" class="pt-5 pb-3">
-
-<div class="container">
-
-<div class="row">
-
-<div class="col-md-4">
-<h5>SAARATHI</h5>
-<p>Supporting education and empowering rural students across Karnataka.</p>
-</div>
-
-<div class="col-md-4">
-<h5>Quick Links</h5>
-<ul class="list-unstyled">
-<li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-<li><a href="about.html" class="text-white text-decoration-none">About</a></li>
-<li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
-<li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
-<li><a href="donate.html" class="text-white text-decoration-none">Donate</a></li>
-</ul>
-</div>
-
-<div class="col-md-4">
-
-<h5>Contact</h5>
-
-<p>📧 saarathitrust@gmail.com</p>
-<p>📞 +91 7411403290</p>
-<p>📍 RR Nagar, Bangalore – 560098</p>
-
-<h5 class="mt-3">Follow Us</h5>
-
-<a href="#">LinkedIn</a> |
-<a href="#">Facebook</a> |
-<a href="#">Instagram</a> |
-<a href="#">YouTube</a>
-
-</div>
-
-</div>
-
-<hr>
-
-<div class="text-center small">
-© SAARATHI NGO
-</div>
-
-</div>
-
-</footer>
-
-
-<a href="https://wa.me/917411403290" class="whatsapp-button" target="_blank">
-💬 WhatsApp
-</a>
-
-<a href="donate.html" class="floating-donate">
-❤ Donate
-</a>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAARATHI NGO | Supporting Rural Education in Karnataka</title>
+    <meta
+      name="description"
+      content="SAARATHI NGO supports rural students by providing education resources, school supplies and mentorship across Karnataka."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --brand-blue: #2b2e83;
+        --brand-green: #2f6b2f;
+      }
+      body {
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        background: #f8f9fa;
+      } /* HERO */
+      .hero-section {
+        height: 90vh;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+          url("images/hero-bg.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+      .hero-title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+      }
+      .hero-sub {
+        font-size: 18px;
+        max-width: 650px;
+        margin: auto;
+      }
+      .button-group {
+        margin-top: 25px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+      }
+      .btn-saarathi {
+        padding: 12px 28px;
+        border-radius: 40px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .btn-green {
+        background: #2f6b2f;
+        color: white;
+      }
+      .btn-outline {
+        background: white;
+        color: #2b2e83;
+        border: 2px solid #2b2e83;
+      } /* ABOUT */
+      .section-title {
+        color: var(--brand-blue);
+        font-weight: 700;
+      }
+      .about-box {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      } /* PROGRAMS */
+      .program-card {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        transition: 0.3s;
+      }
+      .program-card:hover {
+        transform: translateY(-6px);
+      } /* IMPACT */
+      .impact-box {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      } /* FLOATING BUTTONS */
+      .floating-donate {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background: #2f6b2f;
+        color: white;
+        padding: 12px 22px;
+        border-radius: 50px;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+      }
+      .whatsapp-button {
+        position: fixed;
+        bottom: 90px;
+        right: 25px;
+        background: #25d366;
+        color: white;
+        padding: 12px 18px;
+        border-radius: 50px;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+    <!-- HERO -->
+    <section class="hero-section">
+      <div>
+        <h1 class="hero-title">
+          Education is the Strongest Foundation for Change
+        </h1>
+        <p class="hero-sub mt-3">
+          SAARATHI supports rural students across Karnataka by providing
+          education resources, mentorship and opportunities.
+        </p>
+        <div class="button-group">
+          <a href="about.html" class="btn-saarathi btn-green">
+            Learn About Us
+          </a>
+          <a href="gallery.html" class="btn-saarathi btn-outline">
+            View Activities
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT PREVIEW -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center section-title mb-4">About SAARATHI</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="about-box text-center">
+              <p>
+                SAARATHI is a community-driven non-profit organization dedicated
+                to improving educational opportunities for children studying in
+                government schools across Karnataka. Through school visits,
+                mentorship programs and educational resource distribution, the
+                organization supports students from economically disadvantaged
+                backgrounds.
+              </p>
+              <a href="about.html" class="btn btn-success rounded-pill mt-3">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROGRAMS -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center section-title mb-5">Our Programs</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="program-card">
+              <h4>School Visits</h4>
+              <p>
+                Our volunteers regularly visit government schools to interact
+                with students, understand their needs and provide learning
+                support.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="program-card">
+              <h4>Educational Resources</h4>
+              <p>
+                Distribution of school bags, notebooks, stationery kits and
+                learning materials to support students’ academic journey.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="program-card">
+              <h4>Mentorship Programs</h4>
+              <p>
+                Mentors guide students with academic support, career awareness
+                and personal development opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- IMPACT -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center section-title mb-5">Our Impact</h2>
+        <div class="row g-4 text-center">
+          <div class="col-md-4">
+            <div class="impact-box">
+              <h2 class="text-success">770+</h2>
+              <p>Students Supported</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="impact-box">
+              <h2 class="text-success">13</h2>
+              <p>Schools Reached</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="impact-box">
+              <h2 class="text-success">Multiple</h2>
+              <p>Districts Across Karnataka</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <a
+      href="https://wa.me/917411403290"
+      class="whatsapp-button"
+      target="_blank"
+    >
+      💬 WhatsApp
+    </a>
+    <a href="donate.html" class="floating-donate"> ❤ Donate </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      /* Navbar */ fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+          let currentPage = window.location.pathname.split("/").pop();
+          let links = document.querySelectorAll(".nav-link");
+          links.forEach((link) => {
+            let linkPage = link.getAttribute("href");
+            if (linkPage === currentPage) {
+              link.classList.add("active");
+            }
+          });
+        });
+      /* Footer */ fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
 </html>
-
-
-
