@@ -1,63 +1,37 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
-<title>About Us | SAARATHI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | SAARATHI NGO</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-  
 
 :root{
 --brand-blue:#2b2e83;
 --brand-green:#2f6b2f;
 }
 
-/* NAVBAR COLOR */
-
-.navbar-custom{
-background:#2b2e83;
-padding:12px 0;
-box-shadow:0 5px 20px rgba(0,0,0,0.15);
-}
-
-.navbar-dark .nav-link{
-color:white !important;
-font-weight:600;
-}
-
-
-
-:root{
---brand-primary:#2b2e83;
---brand-secondary:#2f6b2f;
-}
-
 body{
 font-family:"Open Sans",sans-serif;
 background:#f8f9fa;
-}
-
-footer{
-background:var(--brand-primary);
-color:white;
-}
-
-.text-brand{
-color:var(--brand-primary);
+margin:0;
 }
 
 .section-title{
-color:var(--brand-primary);
-font-weight:600;
+color:var(--brand-blue);
+font-weight:700;
 }
 
 .highlight-box{
-border-left:5px solid var(--brand-secondary);
+border-left:5px solid var(--brand-green);
 padding-left:20px;
 }
 
@@ -75,94 +49,17 @@ text-align:center;
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+<!-- NAVBAR -->
+<div id="navbar"></div>
 
-<div class="container">
 
-<a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-<img src="images/logo.png" width="40" class="me-2 rounded">
-SAARATHI
-</a>
-
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="navbarNav">
-
-<ul class="navbar-nav ms-auto text-center">
-
-<li class="nav-item">
-<a class="nav-link" href="index.html">Home</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="about.html">About</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="programs.html">Programs</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="gallery.html">Gallery</a>
-</li>
-
-<li class="nav-item dropdown">
-
-<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-Resources
-</a>
-
-<ul class="dropdown-menu">
-<li><a class="dropdown-item" href="news.html">News & Events</a></li>
-<li><a class="dropdown-item" href="reports.html">Financial Reports</a></li>
-</ul>
-
-</li>
-
-<li class="nav-item dropdown">
-
-<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-Be a Part
-</a>
-
-<ul class="dropdown-menu">
-<li><a class="dropdown-item" href="donate.html">Be a Donor</a></li>
-
-<li>
-<a class="dropdown-item"
-href="https://wa.me/917411403290?text=Hello%20I%20would%20like%20to%20volunteer%20for%20Saarathi%20NGO"
-target="_blank">
-Be a Volunteer
-</a>
-</li>
-
-</ul>
-
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="contact.html">Contact</a>
-</li>
-
-<li class="nav-item mt-2 mt-lg-0">
-<a class="btn btn-light fw-bold text-primary px-4 rounded-pill" href="donate.html">
-Donate
-</a>
-</li>
-
-</ul>
-
-</div>
-</div>
-</nav>
+<!-- ABOUT SECTION -->
 
 <section class="py-5">
 
 <div class="container">
 
-<h2 class="text-center text-brand mb-4">About SAARATHI</h2>
+<h2 class="text-center section-title mb-4">About SAARATHI</h2>
 
 <p class="lead text-center mx-auto mb-5" style="max-width:850px">
 SAARATHI is a community-driven non-profit organization committed to improving
@@ -171,7 +68,7 @@ communities through educational and social initiatives.
 </p>
 
 
-<!-- Introduction -->
+<!-- WHO WE ARE -->
 
 <div class="row mb-5">
 
@@ -199,7 +96,7 @@ overall educational environment.
 </div>
 
 
-<!-- Mission & Vision -->
+<!-- MISSION & VISION -->
 
 <div class="row g-5 mb-5">
 
@@ -237,37 +134,7 @@ every individual has the opportunity to build a dignified and independent life.
 </div>
 
 
-<!-- Activities -->
-
-<h4 class="section-title mb-4 text-center">What We Do</h4>
-
-<div class="row g-4 mb-5">
-
-<div class="col-md-4">
-<div class="impact-box">
-<h5>School Outreach</h5>
-<p>Visits to rural government schools to understand student needs and support educational development.</p>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="impact-box">
-<h5>Educational Supplies</h5>
-<p>Distribution of school bags, notebooks, stationery kits and learning materials to students.</p>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="impact-box">
-<h5>Student Engagement</h5>
-<p>Summer camps, interactive learning activities and awareness programs for students.</p>
-</div>
-</div>
-
-</div>
-
-
-<!-- Impact -->
+<!-- IMPACT -->
 
 <h4 class="section-title mb-4 text-center">Our Impact</h4>
 
@@ -300,62 +167,49 @@ every individual has the opportunity to build a dignified and independent life.
 
 </section>
 
+
 <!-- FOOTER -->
+<div id="footer"></div>
 
-<footer style="background:#2b2e83;color:white" class="pt-5 pb-3">
 
-<div class="container">
+<!-- SCRIPTS -->
 
-<div class="row">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<div class="col-md-4">
-<h5>SAARATHI</h5>
-<p>Supporting education and empowering rural students across Karnataka.</p>
-</div>
+<script>
 
-<div class="col-md-4">
-<h5>Quick Links</h5>
-<ul class="list-unstyled">
-<li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-<li><a href="about.html" class="text-white text-decoration-none">About</a></li>
-<li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
-<li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
-<li><a href="donate.html" class="text-white text-decoration-none">Donate</a></li>
-</ul>
-</div>
+/* Load Navbar */
+fetch("navbar.html")
+.then(res => res.text())
+.then(data => {
+document.getElementById("navbar").innerHTML = data;
 
-<div class="col-md-4">
+/* Highlight active page automatically */
 
-<h5>Contact</h5>
+let links = document.querySelectorAll(".nav-link");
 
-<p>📧 saarathitrust@gmail.com</p>
-<p>📞 +91 7411403290</p>
-<p>📍 RR Nagar, Bangalore – 560098</p>
+links.forEach(link => {
 
-<h5 class="mt-3">Follow Us</h5>
+if(link.href === window.location.href){
 
-<a href="#">LinkedIn</a> |
-<a href="#">Facebook</a> |
-<a href="#">Instagram</a> |
-<a href="#">YouTube</a>
+link.classList.add("active");
 
-</div>
+}
 
-</div>
+});
 
-<hr>
+});
 
-<div class="text-center small">
-© SAARATHI NGO
-</div>
+/* Load Footer */
 
-</div>
+fetch("footer.html")
+.then(res => res.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
 
-</footer>
+</script>
 
 </body>
+
 </html>
-
-
-
-
