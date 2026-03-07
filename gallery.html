@@ -12,27 +12,30 @@
 
 <style>
 
-/* Navbar color */
+/* Navbar */
+
 .navbar-custom{
 background:#2b2e83;
 }
 
-/* Hero section */
+/* Hero */
+
 .hero-section{
-background:#2b2e83;
-color:white;
-padding:90px 20px 70px;
+background:#f4f6fb;
+color:#2b2e83;
+padding:70px 20px;
 text-align:center;
+border-bottom:1px solid #e0e0e0;
 }
 
-/* Gallery title */
+/* Gallery */
+
 .year-title{
 text-align:center;
 margin:50px 0 30px;
 font-weight:700;
 }
 
-/* Gallery cards */
 .gallery-card{
 border:none;
 border-radius:12px;
@@ -48,6 +51,13 @@ transform:translateY(-5px);
 .gallery-img{
 height:220px;
 object-fit:cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+background-color:rgba(0,0,0,0.5);
+border-radius:50%;
+padding:15px;
 }
 
 </style>
@@ -71,7 +81,6 @@ SAARATHI
 
 </a>
 
-
 <button
 class="navbar-toggler"
 type="button"
@@ -81,7 +90,6 @@ data-bs-target="#navbarNav">
 <span class="navbar-toggler-icon"></span>
 
 </button>
-
 
 <div class="collapse navbar-collapse" id="navbarNav">
 
@@ -102,66 +110,6 @@ data-bs-target="#navbarNav">
 <li class="nav-item">
 <a class="nav-link active" href="gallery.html">Gallery</a>
 </li>
-
-<li class="nav-item dropdown">
-
-<a
-class="nav-link dropdown-toggle"
-href="#"
-role="button"
-data-bs-toggle="dropdown">
-
-Resources
-
-</a>
-
-<ul class="dropdown-menu">
-
-<li>
-<a class="dropdown-item" href="news.html">News & Events</a>
-</li>
-
-<li>
-<a class="dropdown-item" href="reports.html">Financial Reports</a>
-</li>
-
-</ul>
-
-</li>
-
-
-<li class="nav-item dropdown">
-
-<a
-class="nav-link dropdown-toggle"
-href="#"
-role="button"
-data-bs-toggle="dropdown">
-
-Be a Part
-
-</a>
-
-<ul class="dropdown-menu">
-
-<li>
-<a class="dropdown-item" href="donate.html">Be a Donor</a>
-</li>
-
-<li>
-<a class="dropdown-item"
-href="https://wa.me/917411403290?text=Hello%20I%20would%20like%20to%20volunteer%20for%20Saarathi%20NGO"
-target="_blank">
-
-Be a Volunteer
-
-</a>
-</li>
-
-</ul>
-
-</li>
-
 
 <li class="nav-item">
 <a class="nav-link" href="contact.html">Contact</a>
@@ -199,7 +147,6 @@ Donate
 </section>
 
 
-
 <!-- GALLERY -->
 
 <div class="container">
@@ -209,19 +156,55 @@ Donate
 <div class="row g-4">
 
 
+<!-- SUMMER CAMP -->
+
 <div class="col-md-4">
 
 <div class="card gallery-card">
 
-<img src="images/summercamp.jpg" class="gallery-img card-img-top">
+<div id="summercamp" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="images/summercamp1.jpg" class="gallery-img card-img-top">
+</div>
+
+<div class="carousel-item">
+<img src="images/summercamp2.jpg" class="gallery-img card-img-top">
+</div>
+
+<div class="carousel-item">
+<img src="images/summercamp3.jpg" class="gallery-img card-img-top">
+</div>
+
+<div class="carousel-item">
+<img src="images/summercamp4.jpg" class="gallery-img card-img-top">
+</div>
+
+<div class="carousel-item">
+<img src="images/summercamp5.jpg" class="gallery-img card-img-top">
+</div>
+
+</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#summercamp" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#summercamp" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
 
 <div class="card-body">
 
 <h5>Summer Camp</h5>
 
 <p>
-70 students from government schools participated in
-a 5-day educational and recreational camp.
+70 students from government schools participated in a
+5-day educational and recreational camp.
 </p>
 
 </div>
@@ -231,11 +214,48 @@ a 5-day educational and recreational camp.
 </div>
 
 
+
+<!-- SCHOOL VISIT -->
+
 <div class="col-md-4">
 
 <div class="card gallery-card">
 
-<img src="images/beechaganahalli.jpg" class="gallery-img card-img-top">
+<div id="schoolvisit" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="images/school1.jpg" class="gallery-img card-img-top">
+</div>
+
+<div class="carousel-item">
+<img src="images/school2.jpg" class="gallery-img card-img-top">
+</div>
+
+<div class="carousel-item">
+<img src="images/school3.jpg" class="gallery-img card-img-top">
+</div>
+
+<div class="carousel-item">
+<img src="images/school4.jpg" class="gallery-img card-img-top">
+</div>
+
+<div class="carousel-item">
+<img src="images/school5.jpg" class="gallery-img card-img-top">
+</div>
+
+</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#schoolvisit" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#schoolvisit" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
 
 <div class="card-body">
 
@@ -254,88 +274,55 @@ Beechaganahalli, Chikkaballapura.
 
 
 
-<div class="col-md-4">
-
-<div class="card gallery-card">
-
-<img src="images/channapatna.jpg" class="gallery-img card-img-top">
-
-<div class="card-body">
-
-<h5>School Outreach</h5>
-
-<p>
-Educational engagement activities in
-Channapatna schools.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-
+<!-- BANGALORE DISTRIBUTION -->
 
 <div class="col-md-4">
 
 <div class="card gallery-card">
 
-<img src="images/illigaradoddi.jpg" class="gallery-img card-img-top">
+<div id="bangalore" class="carousel slide" data-bs-ride="carousel">
 
-<div class="card-body">
+<div class="carousel-inner">
 
-<h5>School Visit</h5>
+<div class="carousel-item active">
+<img src="images/bangalore1.jpg" class="gallery-img card-img-top">
+</div>
 
-<p>
-Govt Lower Primary School,
-Illigaradoddi, Ramanagara.
-</p>
+<div class="carousel-item">
+<img src="images/bangalore2.jpg" class="gallery-img card-img-top">
+</div>
 
+<div class="carousel-item">
+<img src="images/bangalore3.jpg" class="gallery-img card-img-top">
+</div>
+
+<div class="carousel-item">
+<img src="images/bangalore4.jpg" class="gallery-img card-img-top">
+</div>
+
+<div class="carousel-item">
+<img src="images/bangalore5.jpg" class="gallery-img card-img-top">
 </div>
 
 </div>
 
-</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#bangalore" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
 
-
-
-<div class="col-md-4">
-
-<div class="card gallery-card">
-
-<img src="images/kanakapura.jpg" class="gallery-img card-img-top">
-
-<div class="card-body">
-
-<h5>Kanakapura Schools</h5>
-
-<p>
-School visits at Sathanuru,
-Halasuru and Aralimaradadoddi.
-</p>
+<button class="carousel-control-next" type="button" data-bs-target="#bangalore" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
 
 </div>
-
-</div>
-
-</div>
-
-
-
-<div class="col-md-4">
-
-<div class="card gallery-card">
-
-<img src="images/bangalore.jpg" class="gallery-img card-img-top">
 
 <div class="card-body">
 
 <h5>Bangalore Distribution</h5>
 
 <p>
-School bags and books distributed
-to 50 students in Bangalore.
+School bags and books distributed to
+50 students in Bangalore.
 </p>
 
 </div>
@@ -343,7 +330,6 @@ to 50 students in Bangalore.
 </div>
 
 </div>
-
 
 
 </div>
@@ -410,13 +396,6 @@ across Karnataka.
 <p>📧 saarathitrust@gmail.com</p>
 <p>📞 +91 7411403290</p>
 <p>📍 RR Nagar, Bangalore – 560098</p>
-
-<h5 class="mt-3">Follow Us</h5>
-
-<a href="#" class="text-white">LinkedIn</a> |
-<a href="#" class="text-white">Facebook</a> |
-<a href="#" class="text-white">Instagram</a> |
-<a href="#" class="text-white">YouTube</a>
 
 </div>
 
