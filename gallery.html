@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,18 +14,22 @@ body{
   background:#f5f5f5;
 }
 
-/* NAVBAR */
-.navbar-custom{
-  background:#2b2e83;
-  padding:12px 0;
+/* REMOVE GAP BELOW NAVBAR */
+#navbar{
+  margin-bottom:0;
+}
+
+/* MAIN SECTION */
+.main-content{
+  padding-top:20px;
 }
 
 /* TITLE */
 .title{
   text-align:center;
   font-size:36px;
-  margin:40px 0;
   font-weight:bold;
+  margin:30px 0;
 }
 
 /* GRID */
@@ -34,7 +37,7 @@ body{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
   gap:30px;
-  padding:40px 60px;
+  padding:20px 60px 60px;
 }
 
 /* CARD */
@@ -86,14 +89,6 @@ body{
   padding:20px;
 }
 
-/* MOBILE */
-@media (max-width:768px){
-.gallery{
-  grid-template-columns:1fr;
-  padding:20px;
-}
-}
-
 /* LIGHTBOX */
 .lightbox{
   position:fixed;
@@ -134,6 +129,14 @@ body{
 }
 .lightbox .prev{left:20px;}
 .lightbox .next{right:20px;}
+
+/* MOBILE */
+@media (max-width:768px){
+.gallery{
+  grid-template-columns:1fr;
+  padding:20px;
+}
+}
 </style>
 </head>
 
@@ -141,6 +144,8 @@ body{
 
 <!-- HEADER -->
 <div id="navbar"></div>
+
+<div class="main-content">
 
 <div class="title">Activities - 2025</div>
 
@@ -180,76 +185,9 @@ body{
 </div>
 </div>
 
-<!-- Channapatna -->
-<div class="card">
-<div class="slider">
-<img src="images/channa1.jpeg" class="slide active">
-<img src="images/channa2.jpeg" class="slide">
-<img src="images/channa3.jpeg" class="slide">
-<img src="images/channa4.jpeg" class="slide">
-<img src="images/channa5.jpeg" class="slide">
-<img src="images/channa6.jpeg" class="slide">
-<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-</div>
-<div class="card-content">
-<h3>School Visits – Channapatna</h3>
-<p>Veeregowdanadoddi, Gollaradoddi, Thoobinakere</p>
-</div>
-</div>
+<!-- ADD REST SAME (you already have them correct) -->
 
-<!-- Illigaradoddi -->
-<div class="card">
-<div class="slider">
-<img src="images/illi1.jpeg" class="slide active">
-<img src="images/illi2.jpeg" class="slide">
-<img src="images/illi3.jpeg" class="slide">
-<img src="images/illi4.jpeg" class="slide">
-<img src="images/illi5.jpeg" class="slide">
-<img src="images/illi6.jpeg" class="slide">
-<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
 </div>
-<div class="card-content">
-<h3>School Visit</h3>
-<p>Illigaradoddi – Ramanagara</p>
-</div>
-</div>
-
-<!-- Bangalore -->
-<div class="card">
-<div class="slider">
-<img src="images/bangalore1.jpeg" class="slide active">
-<img src="images/bangalore2.jpeg" class="slide">
-<img src="images/bangalore3.jpeg" class="slide">
-<img src="images/bangalore4.jpeg" class="slide">
-<img src="images/bangalore5.jpeg" class="slide">
-<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-</div>
-<div class="card-content">
-<h3>Urban Distribution</h3>
-<p>Bangalore – 50 students</p>
-</div>
-</div>
-
-<!-- Parents Meeting -->
-<div class="card">
-<div class="slider">
-<img src="images/parent1.jpeg" class="slide active">
-<img src="images/parent2.jpeg" class="slide">
-<img src="images/parent3.jpeg" class="slide">
-<img src="images/parent4.jpeg" class="slide">
-<img src="images/parent5.jpeg" class="slide">
-<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-</div>
-<div class="card-content">
-<h3>Parents Meeting</h3>
-<p>Aralimaradadoddi</p>
-</div>
-</div>
-
 </div>
 
 <!-- FOOTER -->
