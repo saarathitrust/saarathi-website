@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,6 +15,13 @@ body{
   background:#f5f5f5;
 }
 
+/* NAVBAR */
+.navbar-custom{
+  background:#2b2e83;
+  padding:12px 0;
+}
+
+/* TITLE */
 .title{
   text-align:center;
   font-size:36px;
@@ -131,6 +139,9 @@ body{
 
 <body>
 
+<!-- HEADER -->
+<div id="navbar"></div>
+
 <div class="title">Activities - 2025</div>
 
 <div class="gallery">
@@ -241,6 +252,9 @@ body{
 
 </div>
 
+<!-- FOOTER -->
+<div id="footer"></div>
+
 <!-- LIGHTBOX -->
 <div id="lightbox" class="lightbox">
 <span class="close" onclick="closeLightbox()">×</span>
@@ -249,9 +263,25 @@ body{
 <button class="arrow next" onclick="changeLightboxSlide(1)">❯</button>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 <script>
 
-/* CARD SLIDER */
+/* LOAD NAVBAR */
+fetch("navbar.html")
+.then(res => res.text())
+.then(data => {
+document.getElementById("navbar").innerHTML = data;
+});
+
+/* LOAD FOOTER */
+fetch("footer.html")
+.then(res => res.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
+
+/* SLIDER */
 function changeSlide(btn,dir){
 let slides=btn.parentElement.querySelectorAll(".slide");
 let i=0;
@@ -304,4 +334,3 @@ document.getElementById("lightbox-img").src=currentSlides[currentIndex].src;
 
 </body>
 </html>
-
