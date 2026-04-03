@@ -5,20 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Saarathi Trust Gallery</title>
 
+<!-- BOOTSTRAP -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+<!-- FONT AWESOME (IMPORTANT FOR ICONS) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- GOOGLE FONT (MATCH HOME PAGE) -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
+:root {
+  --brand-blue: #2b2e83;
+}
+
 body{
-  font-family: Arial, sans-serif;
+  font-family:"Open Sans", sans-serif;
   margin:0;
   background:#f5f5f5;
 }
 
-.navbar-custom{
-  background:#2b2e83;
-  padding:12px 0;
+/* FORCE NAVBAR COLOR */
+.navbar{
+  background:#2b2e83 !important;
 }
 
+/* TITLE */
 .title{
   text-align:center;
   font-size:36px;
@@ -26,6 +38,7 @@ body{
   font-weight:bold;
 }
 
+/* GRID */
 .gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
@@ -33,6 +46,7 @@ body{
   padding:40px 60px;
 }
 
+/* CARD */
 .card{
   background:white;
   border-radius:12px;
@@ -44,6 +58,7 @@ body{
   transform:translateY(-6px);
 }
 
+/* SLIDER */
 .slider{
   position:relative;
   height:220px;
@@ -60,6 +75,7 @@ body{
   display:block;
 }
 
+/* ARROWS */
 .arrow{
   position:absolute;
   top:50%;
@@ -79,6 +95,7 @@ body{
   padding:20px;
 }
 
+/* MOBILE */
 @media (max-width:768px){
 .gallery{
   grid-template-columns:1fr;
@@ -138,108 +155,108 @@ body{
 
 <div class="gallery">
 
-<!-- 1. Summer Camp -->
+<!-- 1 -->
 <div class="card">
-  <div class="slider">
-    <img src="images/camp1.jpeg" class="slide active">
-    <img src="images/camp2.jpeg" class="slide">
-    <img src="images/camp3.jpeg" class="slide">
-    <img src="images/camp4.jpeg" class="slide">
-    <img src="images/camp5.jpeg" class="slide">
-    <button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-    <button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-  </div>
-  <div class="card-content">
-    <h3>Summer Camp</h3>
-    <p>70 students participated</p>
-  </div>
+<div class="slider">
+<img src="images/camp1.jpeg" class="slide active">
+<img src="images/camp2.jpeg" class="slide">
+<img src="images/camp3.jpeg" class="slide">
+<img src="images/camp4.jpeg" class="slide">
+<img src="images/camp5.jpeg" class="slide">
+<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
+<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
+</div>
+<div class="card-content">
+<h3>Summer Camp</h3>
+<p>70 students participated</p>
+</div>
 </div>
 
-<!-- 2. Beechaganahalli -->
+<!-- 2 -->
 <div class="card">
-  <div class="slider">
-    <img src="images/beech1.jpeg" class="slide active">
-    <img src="images/beech2.jpeg" class="slide">
-    <img src="images/beech3.jpeg" class="slide">
-    <img src="images/beech4.jpeg" class="slide">
-    <img src="images/beech5.jpeg" class="slide">
-    <button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-    <button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-  </div>
-  <div class="card-content">
-    <h3>School Visit</h3>
-    <p>Beechaganahalli – Chikkaballapura</p>
-  </div>
+<div class="slider">
+<img src="images/beech1.jpeg" class="slide active">
+<img src="images/beech2.jpeg" class="slide">
+<img src="images/beech3.jpeg" class="slide">
+<img src="images/beech4.jpeg" class="slide">
+<img src="images/beech5.jpeg" class="slide">
+<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
+<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
+</div>
+<div class="card-content">
+<h3>School Visit</h3>
+<p>Beechaganahalli – Chikkaballapura</p>
+</div>
 </div>
 
-<!-- 3. Channapatna -->
+<!-- 3 -->
 <div class="card">
-  <div class="slider">
-    <img src="images/channa1.jpeg" class="slide active">
-    <img src="images/channa2.jpeg" class="slide">
-    <img src="images/channa3.jpeg" class="slide">
-    <img src="images/channa4.jpeg" class="slide">
-    <img src="images/channa5.jpeg" class="slide">
-    <img src="images/channa6.jpeg" class="slide">
-    <button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-    <button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-  </div>
-  <div class="card-content">
-    <h3>School Visits – Channapatna</h3>
-    <p>Veeregowdanadoddi, Gollaradoddi, Thoobinakere</p>
-  </div>
+<div class="slider">
+<img src="images/channa1.jpeg" class="slide active">
+<img src="images/channa2.jpeg" class="slide">
+<img src="images/channa3.jpeg" class="slide">
+<img src="images/channa4.jpeg" class="slide">
+<img src="images/channa5.jpeg" class="slide">
+<img src="images/channa6.jpeg" class="slide">
+<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
+<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
+</div>
+<div class="card-content">
+<h3>School Visits – Channapatna</h3>
+<p>Multiple villages</p>
+</div>
 </div>
 
-<!-- 4. Illigaradoddi -->
+<!-- 4 -->
 <div class="card">
-  <div class="slider">
-    <img src="images/illi1.jpeg" class="slide active">
-    <img src="images/illi2.jpeg" class="slide">
-    <img src="images/illi3.jpeg" class="slide">
-    <img src="images/illi4.jpeg" class="slide">
-    <img src="images/illi5.jpeg" class="slide">
-    <img src="images/illi6.jpeg" class="slide">
-    <button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-    <button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-  </div>
-  <div class="card-content">
-    <h3>School Visit</h3>
-    <p>Illigaradoddi – Ramanagara</p>
-  </div>
+<div class="slider">
+<img src="images/illi1.jpeg" class="slide active">
+<img src="images/illi2.jpeg" class="slide">
+<img src="images/illi3.jpeg" class="slide">
+<img src="images/illi4.jpeg" class="slide">
+<img src="images/illi5.jpeg" class="slide">
+<img src="images/illi6.jpeg" class="slide">
+<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
+<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
+</div>
+<div class="card-content">
+<h3>School Visit</h3>
+<p>Illigaradoddi – Ramanagara</p>
+</div>
 </div>
 
-<!-- 5. Bangalore -->
+<!-- 5 -->
 <div class="card">
-  <div class="slider">
-    <img src="images/bangalore1.jpeg" class="slide active">
-    <img src="images/bangalore2.jpeg" class="slide">
-    <img src="images/bangalore3.jpeg" class="slide">
-    <img src="images/bangalore4.jpeg" class="slide">
-    <img src="images/bangalore5.jpeg" class="slide">
-    <button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-    <button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-  </div>
-  <div class="card-content">
-    <h3>Urban Distribution</h3>
-    <p>Bangalore – 50 students</p>
-  </div>
+<div class="slider">
+<img src="images/bangalore1.jpeg" class="slide active">
+<img src="images/bangalore2.jpeg" class="slide">
+<img src="images/bangalore3.jpeg" class="slide">
+<img src="images/bangalore4.jpeg" class="slide">
+<img src="images/bangalore5.jpeg" class="slide">
+<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
+<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
+</div>
+<div class="card-content">
+<h3>Urban Distribution</h3>
+<p>Bangalore – 50 students</p>
+</div>
 </div>
 
-<!-- 6. Parents Meeting -->
+<!-- 6 -->
 <div class="card">
-  <div class="slider">
-    <img src="images/parent1.jpeg" class="slide active">
-    <img src="images/parent2.jpeg" class="slide">
-    <img src="images/parent3.jpeg" class="slide">
-    <img src="images/parent4.jpeg" class="slide">
-    <img src="images/parent5.jpeg" class="slide">
-    <button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
-    <button class="arrow next" onclick="changeSlide(this,1)">❯</button>
-  </div>
-  <div class="card-content">
-    <h3>Parents Meeting</h3>
-    <p>Aralimaradadoddi</p>
-  </div>
+<div class="slider">
+<img src="images/parent1.jpeg" class="slide active">
+<img src="images/parent2.jpeg" class="slide">
+<img src="images/parent3.jpeg" class="slide">
+<img src="images/parent4.jpeg" class="slide">
+<img src="images/parent5.jpeg" class="slide">
+<button class="arrow prev" onclick="changeSlide(this,-1)">❮</button>
+<button class="arrow next" onclick="changeSlide(this,1)">❯</button>
+</div>
+<div class="card-content">
+<h3>Parents Meeting</h3>
+<p>Aralimaradadoddi</p>
+</div>
 </div>
 
 </div>
@@ -258,14 +275,18 @@ body{
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-fetch("navbar.html").then(res=>res.text()).then(data=>{
+
+/* NAVBAR */
+fetch("navbar.html").then(r=>r.text()).then(data=>{
 document.getElementById("navbar").innerHTML=data;
 });
 
-fetch("footer.html").then(res=>res.text()).then(data=>{
+/* FOOTER */
+fetch("footer.html").then(r=>r.text()).then(data=>{
 document.getElementById("footer").innerHTML=data;
 });
 
+/* SLIDER */
 function changeSlide(btn,dir){
 let slides=btn.parentElement.querySelectorAll(".slide");
 let i=0;
@@ -281,6 +302,7 @@ if(i>=slides.length)i=0;
 slides[i].classList.add("active");
 }
 
+/* LIGHTBOX */
 let currentSlides=[],currentIndex=0;
 
 document.querySelectorAll(".slide").forEach(img=>{
@@ -305,6 +327,7 @@ if(currentIndex<0)currentIndex=currentSlides.length-1;
 if(currentIndex>=currentSlides.length)currentIndex=0;
 document.getElementById("lightbox-img").src=currentSlides[currentIndex].src;
 }
+
 </script>
 
 </body>
