@@ -1,179 +1,308 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | SAARATHI NGO</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <style>
-      :root {
-        --brand-blue: #2b2e83;
-        --brand-green: #2f6b2f;
-      }
-      body {
-        font-family: "Open Sans", sans-serif;
-        background: #f8f9fa;
-        margin: 0;
-      } /* NAVBAR STYLE */
-      .navbar-custom {
-        background: #2b2e83;
-        padding: 12px 0;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-      }
-      .navbar-dark .nav-link {
-        color: white !important;
-        font-weight: 600;
-      } /* PAGE STYLES */
-      .section-title {
-        color: var(--brand-blue);
-        font-weight: 700;
-      }
-      .highlight-box {
-        border-left: 5px solid var(--brand-green);
-        padding-left: 20px;
-      }
-      .impact-box {
-        background: white;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <div id="navbar"></div>
-    <!-- ABOUT SECTION -->
-    <section class="py-5">
-      <div class="container">
-        <h2 class="text-center section-title mb-4">About SAARATHI</h2>
-        <p class="lead text-center mx-auto mb-5" style="max-width: 850px">
-          SAARATHI is a community-driven non-profit organization committed to improving access to education for children in government schools. We work hand-in-hand with students, teachers, and parents to reduce learning gaps and provide meaningful support. Through educational and social initiatives, we strive to empower communities and ensure that every child has the opportunity to learn, grow, and thrive.
-        </p>
-        <!-- WHO WE ARE -->
-        <div class="row mb-5">
-          <div class="col-md-12">
-             <h4 class="section-title mb-3">Empowering Education, Inspiring Confidence</h4>
-            <p>
-              At SAARATHI, we believe every child deserves the chance to learn, grow, and dream—regardless of their background. Working closely with government schools across Karnataka, we support students from economically disadvantaged communities by bridging learning gaps and nurturing confidence in their educational journey. 
-            </p>
-            <h4 class="section-title mb-3">Who We Are</h4>
-            <p>
-              SAARATHI works closely with government schools across Karnataka to
-              support students from economically disadvantaged backgrounds.
-              Through school visits, student engagement activities and
-              educational resource distribution, the organization strives to
-              reduce learning gaps and encourage children to pursue their
-              education with confidence.
-            </p>
-            <p>
-              Our volunteers interact with teachers, parents and students to
-              understand their needs and provide meaningful support such as
-              school bags, notebooks, stationery kits, and learning resources
-              that help improve the overall educational environment.
-            </p>
-             <h4 class="section-title mb-3">What We Do :</h4>
-            <p>
-•	School Engagement: Regular visits to understand the needs of students, teachers, and parents.
-•	Resource Distribution: Providing school bags, notebooks, stationery kits, and learning materials to create a supportive environment.
-•	Student Activities: Interactive sessions that encourage curiosity, teamwork, and self-belief.
-•	Community Support: Collaborating with teachers and parents to strengthen the ecosystem around each child.
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About | SAARATHI NGO</title>
 
-            </p>
-             <h4 class="section-title mb-3">Our Impact</h4>
-            <p>
-•	Reduced barriers to learning by ensuring children have the essentials.
-•	Boosted classroom participation and confidence among students.
-•	Strengthened collaboration between schools, families, and volunteers.
-•	Inspired children to pursue education with renewed enthusiasm.
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-            </p>
-             <h4 class="section-title mb-3">Join Us</h4>
-            <p>
+<style>
+:root{
+--brand-blue:#2b2e83;
+--brand-green:#2f6b2f;
+}
+
+body{
+font-family:"Open Sans",sans-serif;
+background:#f8f9fa;
+margin:0;
+line-height:1.8;
+}
+
+/* NAVBAR */
+.navbar-custom{
+background:#2b2e83;
+padding:12px 0;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.navbar-dark .nav-link{
+color:white !important;
+font-weight:600;
+}
+
+/* PAGE STYLES */
+.section-title{
+color:var(--brand-blue);
+font-weight:700;
+}
+
+.highlight-box{
+border-left:5px solid var(--brand-green);
+padding:25px;
+background:white;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+height:100%;
+}
+
+.impact-box{
+background:white;
+border-radius:10px;
+padding:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.content-space{
+margin-bottom:30px;
+}
+
+.custom-list{
+padding-left:20px;
+}
+
+.custom-list li{
+margin-bottom:10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div id="navbar"></div>
+
+<!-- ABOUT SECTION -->
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="text-center section-title mb-4">
+About SAARATHI
+</h2>
+
+<p class="lead text-center mx-auto mb-5" style="max-width:850px">
+
+SAARATHI is a community-driven non-profit organization committed to improving access to education for children in government schools. We work hand-in-hand with students, teachers, and parents to reduce learning gaps and provide meaningful support. Through educational and social initiatives, we strive to empower communities and ensure that every child has the opportunity to learn, grow, and thrive.
+
+</p>
+
+
+<div class="content-space">
+
+<h4 class="section-title mb-3">
+Empowering Education, Inspiring Confidence
+</h4>
+
+<p>
+
+At SAARATHI, we believe every child deserves the chance to learn, grow, and dream—regardless of their background. Working closely with government schools across Karnataka, we support students from economically disadvantaged communities by bridging learning gaps and nurturing confidence in their educational journey.
+
+</p>
+
+</div>
+
+
+<div class="content-space">
+
+<h4 class="section-title mb-3">
+Who We Are
+</h4>
+
+<p>
+
+SAARATHI works closely with government schools across Karnataka to support students from economically disadvantaged backgrounds. Through school visits, student engagement activities and educational resource distribution, the organization strives to reduce learning gaps and encourage children to pursue their education with confidence.
+
+</p>
+
+<p>
+
+Our volunteers interact with teachers, parents and students to understand their needs and provide meaningful support such as school bags, notebooks, stationery kits, and learning resources that help improve the overall educational environment.
+
+</p>
+
+</div>
+
+
+<div class="content-space">
+
+<h4 class="section-title mb-3">
+What We Do :
+</h4>
+
+<ul class="custom-list">
+
+<li>School Engagement: Regular visits to understand the needs of students, teachers, and parents.</li>
+
+<li>Resource Distribution: Providing school bags, notebooks, stationery kits, and learning materials to create a supportive environment.</li>
+
+<li>Student Activities: Interactive sessions that encourage curiosity, teamwork, and self-belief.</li>
+
+<li>Community Support: Collaborating with teachers and parents to strengthen the ecosystem around each child.</li>
+
+</ul>
+
+</div>
+
+
+<div class="content-space">
+
+<h4 class="section-title mb-3">
+Our Impact
+</h4>
+
+<ul class="custom-list">
+
+<li>Reduced barriers to learning by ensuring children have the essentials.</li>
+
+<li>Boosted classroom participation and confidence among students.</li>
+
+<li>Strengthened collaboration between schools, families, and volunteers.</li>
+
+<li>Inspired children to pursue education with renewed enthusiasm.</li>
+
+</ul>
+
+</div>
+
+
+<div class="content-space">
+
+<h4 class="section-title mb-3">
+Join Us
+</h4>
+
+<p>
+
 Together, we can transform education for thousands of children across Karnataka. Whether through volunteering, partnerships, or contributions, your support helps us guide students toward brighter futures.
-            </p>
-          </div>
-        </div>
-        <!-- MISSION & VISION -->
-        <div class="row g-5 mb-5">
-          <div class="col-md-6">
-            <div class="highlight-box">
-              <h4 class="text-success">Our Mission</h4>
-              <p>
-                To provide educational support and resources to children
-                studying in government schools and ensure that no child is
-                deprived of learning opportunities due to financial limitations.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="highlight-box">
-              <h4 class="text-success">Our Vision</h4>
-              <p>
-                A society where every child has equal access to quality
-                education and every individual has the opportunity to build a
-                dignified and independent life.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- IMPACT -->
-        <h4 class="section-title mb-4 text-center">Our Impact</h4>
-        <div class="row g-4 text-center">
-          <div class="col-md-4">
-            <div class="impact-box">
-              <h2 class="text-success">770+</h2>
-              <p>Students Supported</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="impact-box">
-              <h2 class="text-success">13</h2>
-              <p>Schools Reached</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="impact-box">
-              <h2 class="text-success">Multiple</h2>
-              <p>Districts Across Karnataka</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- FOOTER -->
-    <div id="footer"></div>
-    <!-- SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      /* Load Navbar */ fetch("navbar.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("navbar").innerHTML = data;
-          /* Highlight active page */ let currentPage = window.location.pathname
-            .split("/")
-            .pop();
-          let links = document.querySelectorAll(".nav-link");
-          links.forEach((link) => {
-            let linkPage = link.getAttribute("href");
-            if (linkPage === currentPage) {
-              link.classList.add("active");
-            }
-          });
-        });
-      /* Load Footer */ fetch("footer.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("footer").innerHTML = data;
-        });
-    </script>
-  </body>
+
+</p>
+
+</div>
+
+
+<!-- MISSION & VISION -->
+
+<div class="row g-5 mb-5">
+
+<div class="col-md-6">
+
+<div class="highlight-box">
+
+<h4 class="text-success">
+Our Mission
+</h4>
+
+<p>
+
+To provide educational support and resources to children studying in government schools and ensure that no child is deprived of learning opportunities due to financial limitations.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6">
+
+<div class="highlight-box">
+
+<h4 class="text-success">
+Our Vision
+</h4>
+
+<p>
+
+A society where every child has equal access to quality education and every individual has the opportunity to build a dignified and independent life.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- IMPACT STATS -->
+
+<h4 class="section-title text-center mb-4">
+Our Impact
+</h4>
+
+<div class="row g-4 text-center">
+
+<div class="col-md-4">
+
+<div class="impact-box">
+<h2 class="text-success">770+</h2>
+<p>Students Supported</p>
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="impact-box">
+<h2 class="text-success">13</h2>
+<p>Schools Reached</p>
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="impact-box">
+<h2 class="text-success">Multiple</h2>
+<p>Districts Across Karnataka</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+/* Load Navbar */
+fetch("navbar.html")
+.then((res)=>res.text())
+.then((data)=>{
+document.getElementById("navbar").innerHTML=data;
+
+let currentPage=window.location.pathname.split("/").pop();
+
+let links=document.querySelectorAll(".nav-link");
+
+links.forEach((link)=>{
+let linkPage=link.getAttribute("href");
+
+if(linkPage===currentPage){
+link.classList.add("active");
+}
+});
+});
+
+/* Load Footer */
+fetch("footer.html")
+.then((res)=>res.text())
+.then((data)=>{
+document.getElementById("footer").innerHTML=data;
+});
+
+</script>
+
+</body>
 </html>
